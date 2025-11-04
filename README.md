@@ -44,9 +44,9 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 ## 📚 文档
 
-- [快速开始指南](doc/zh-cn/getting-started.html) - 5分钟快速上手指南
-- [工作台使用](doc/zh-cn/workspace.html) - 详细的工作台功能介绍
-- [常见问题](doc/zh-cn/faq.html) - 常见问题解答
+- [快速开始指南](doc/zh-cn/getting-started.md) - 5分钟快速上手指南
+- [工作台使用](doc/zh-cn/workspace.md) - 详细的工作台功能介绍
+- [常见问题](doc/zh-cn/faq.md) - 常见问题解答
 - [完整文档目录](doc/zh-cn/) - 查看所有文档
 
 ## 🔜 开发中的功能
@@ -64,16 +64,9 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 - 📧 **问题反馈** - 如遇到问题或有功能建议，欢迎提交 [Issue](../../issues)
 - 💬 **社区讨论** - 加入我们的社区群组，与其他开发者交流
-
-### 贡献
-
-我们欢迎社区贡献！如果您想为项目做出贡献，请：
-
-1. Fork 本项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
+  - **QQ 群**: 834429661 (BEKEN LVGL UI DESIGNER)
+  
+    ![QQ群二维码](doc/images/qrcode.png)
 
 ## 📄 许可证
 
