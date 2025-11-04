@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>组件树 - BEKEN LVGL UI Designer 文档</title>
+  
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  <style>
+    /* 简洁的语言切换链接样式 */
+    .language-switcher-inline {
+      text-align: left;
+      padding: 8px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e1e4e5;
+    }
+    
+    .language-switch-link {
+      display: inline-block;
+      color: #2980b9;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    
+    .language-switch-link:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      .language-switcher-inline {
+        padding: 6px 0;
+        margin-bottom: 8px;
+      }
+      
+      .language-switch-link {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u7ec4\u4ef6\u6811";
+        var mkdocs_page_input_path = "workspace-tree.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> BEKEN LVGL UI Designer 文档
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">首页</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="getting-started.html">快速开始</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">工作台使用</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="workspace.html">总览</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-canvas.html">画布区域</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-components.html">组件库</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">组件树</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#31">3.1 页面管理</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_2">创建页面</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">切换页面</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">删除页面</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">重命名页面</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#32">3.2 组件层级显示</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">树形结构</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#33">3.3 组件操作</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">选择组件</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">重命名组件</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_9">拖拽排序</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_10">组件操作菜单</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-properties.html">属性面板</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-toolbar.html">工具栏</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-shortcuts.html">快捷键</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="faq.html">常见问题</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BEKEN LVGL UI Designer 文档</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">工作台使用</li>
+      <li class="breadcrumb-item active">组件树</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  <!-- 语言切换器 - 放在内容区域开始 -->
+  <div class="language-switcher-inline">
+    <a href="#" class="language-switch-link" onclick="switchLanguage(); return false;">
+      <span id="lang-text"></span>
+    </a>
+  </div>
+  
+                <h1 id="_1">🌲 组件树<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>组件树以树形结构展示页面和组件的层级关系，是管理复杂界面的重要工具。</p>
+<h3 id="31">3.1 页面管理<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<h4 id="_2">创建页面<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<ol>
+<li>点击组件树顶部的 "+" 按钮</li>
+</ol>
+<h4 id="_3">切换页面<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>点击页面切换按钮选择要切换的页面，点击页面名称即可</li>
+</ul>
+<h4 id="_4">删除页面<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>点击页面切换按钮选择要删除的页面，点击旁边的删除按钮即可</li>
+</ul>
+<h4 id="_5">重命名页面<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ol>
+<li>双击页面名称</li>
+<li>输入新名称</li>
+<li>按回车确认</li>
+</ol>
+<h3 id="32">3.2 组件层级显示<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<h4 id="_6">树形结构<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>父组件</strong>：可以包含子组件的容器</li>
+<li><strong>子组件</strong>：包含在父组件内的组件</li>
+<li><strong>缩进显示</strong>：子组件会向右缩进，显示层级关系</li>
+</ul>
+<h3 id="33">3.3 组件操作<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<h4 id="_7">选择组件<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>单选</strong>：点击组件名称</li>
+<li>选中的组件在画布和组件树中都会高亮</li>
+</ul>
+<h4 id="_8">重命名组件<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<ol>
+<li>双击组件名称</li>
+<li>输入新名称（建议使用有意义的名称，如 btnSubmit、lblTitle）</li>
+<li>按回车确认</li>
+</ol>
+<h4 id="_9">拖拽排序<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p><strong>调整同级顺序</strong>
+1. 选中组件
+2. 拖拽到目标位置
+3. 松开鼠标完成排序</p>
+<p><strong>父子关系</strong>
+1. 将组件拖拽到目标父组件上</p>
+<p><strong>注意事项</strong>：
+- 只有容器类组件可以作为父组件</p>
+<h4 id="_10">组件操作菜单<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>右键点击组件弹出菜单：</p>
+<ul>
+<li><strong>复制</strong>：复制选中的组件</li>
+<li><strong>删除</strong>：删除组件及其所有子组件</li>
+<li><strong>置顶/置底</strong>：调整组件层级</li>
+<li><strong>显示/隐藏</strong>：切换组件可见性</li>
+<li><strong>锁定/解锁</strong>：切换组件锁定状态</li>
+<li><strong>创建自定义组件</strong>：保存为自定义组件模板</li>
+</ul>
+<hr />
+<p><strong>工作台文档</strong>：<a href="workspace.html">← 返回工作台</a> | <a href="workspace-canvas.html">画布</a> | <a href="workspace-components.html">组件库</a> | <a href="workspace-tree.html">组件树</a> | <a href="workspace-properties.html">属性面板</a> | <a href="workspace-toolbar.html">工具栏</a> | <a href="workspace-shortcuts.html">快捷键</a></p>
+              
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="workspace-components.html" class="btn btn-neutral float-left" title="组件库"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="workspace-properties.html" class="btn btn-neutral float-right" title="属性面板">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="workspace-components.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="workspace-properties.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    /**
+     * 切换语言函数
+     * 自动在 zh-cn 和 en 之间切换，并保持在相同的页面
+     */
+    function switchLanguage() {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      // 判断当前是中文还是英文
+      if (currentPath.includes('/zh-cn/')) {
+        // 当前是中文，切换到英文
+        newPath = currentPath.replace('/zh-cn/', '/en/');
+      } else if (currentPath.includes('/en/')) {
+        // 当前是英文，切换到中文
+        newPath = currentPath.replace('/en/', '/zh-cn/');
+      } else {
+        // 如果路径不包含语言标识，提示用户
+        alert('无法确定当前语言');
+        return;
+      }
+      
+      // 跳转到新页面
+      window.location.href = newPath;
+    }
+    
+    /**
+     * 页面加载时设置语言链接文本
+     * 显示可以切换到的目标语言
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const langText = document.getElementById('lang-text');
+      
+      if (langText) {
+        if (currentPath.includes('/zh-cn/')) {
+          langText.textContent = '[English]';  // 当前中文，显示可切换到英文
+        } else if (currentPath.includes('/en/')) {
+          langText.textContent = '[中文]';      // 当前英文，显示可切换到中文
+        }
+      }
+    });
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Properties - BEKEN LVGL UI Designer Documentation</title>
+  
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  <style>
+    /* 简洁的语言切换链接样式 */
+    .language-switcher-inline {
+      text-align: left;
+      padding: 8px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e1e4e5;
+    }
+    
+    .language-switch-link {
+      display: inline-block;
+      color: #2980b9;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    
+    .language-switch-link:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      .language-switcher-inline {
+        padding: 6px 0;
+        margin-bottom: 8px;
+      }
+      
+      .language-switch-link {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Properties";
+        var mkdocs_page_input_path = "workspace-properties.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> BEKEN LVGL UI Designer Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workspace</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="workspace.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-canvas.html">Canvas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-components.html">Components</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-tree.html">Tree</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Properties</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#41-basic-properties">4.1 Basic Properties</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#layout-properties">Layout Properties</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#component-specific-properties">Component-Specific Properties</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#42-style-editor">4.2 Style Editor</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#style-parts">Style Parts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#style-states">Style States</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#style-library-functions">Style Library Functions</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-toolbar.html">Toolbar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-shortcuts.html">Shortcuts</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BEKEN LVGL UI Designer Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Workspace</li>
+      <li class="breadcrumb-item active">Properties</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  <!-- 语言切换器 - 放在内容区域开始 -->
+  <div class="language-switcher-inline">
+    <a href="#" class="language-switch-link" onclick="switchLanguage(); return false;">
+      <span id="lang-text"></span>
+    </a>
+  </div>
+  
+                <h1 id="properties-panel">⚙️ Properties Panel<a class="headerlink" href="#properties-panel" title="Permanent link">&para;</a></h1>
+<p>The properties panel is used to edit properties, styles, and data of the selected component.</p>
+<h3 id="41-basic-properties">4.1 Basic Properties<a class="headerlink" href="#41-basic-properties" title="Permanent link">&para;</a></h3>
+<h4 id="layout-properties">Layout Properties<a class="headerlink" href="#layout-properties" title="Permanent link">&para;</a></h4>
+<p><strong>Position and Size</strong>
+- <strong>X Coordinate</strong>: X-axis position of component top-left corner (relative to parent component)
+- <strong>Y Coordinate</strong>: Y-axis position of component top-left corner (relative to parent component)
+- <strong>Width</strong>: Component width
+- <strong>Height</strong>: Component height</p>
+<h4 id="component-specific-properties">Component-Specific Properties<a class="headerlink" href="#component-specific-properties" title="Permanent link">&para;</a></h4>
+<p>Each component type has its specific properties, for example:</p>
+<p><strong>Label Properties</strong>
+- <strong>Text</strong>: Text content to display
+- <strong>Long Mode</strong>: Long text handling method (wrap/scroll/ellipsis)</p>
+<p><strong>Image Properties</strong>
+- <strong>Src</strong>: Image source (select from resource manager)</p>
+<p><strong>Slider Properties</strong>
+- <strong>Min Value</strong>: Minimum value
+- <strong>Max Value</strong>: Maximum value</p>
+<h3 id="42-style-editor">4.2 Style Editor<a class="headerlink" href="#42-style-editor" title="Permanent link">&para;</a></h3>
+<p>The style editor is a core feature of the properties panel, providing complete LVGL style support.</p>
+<h4 id="style-parts">Style Parts<a class="headerlink" href="#style-parts" title="Permanent link">&para;</a></h4>
+<p>Some components have multiple style parts that can be styled separately, for example:</p>
+<ul>
+<li><strong>Main</strong>: Main body part</li>
+<li><strong>Scrollbar</strong>: Scrollbar</li>
+<li><strong>Indicator</strong>: Indicator (like slider's slider part, progress bar's fill part)</li>
+<li><strong>Knob</strong>: Knob (like slider's drag point)</li>
+<li><strong>Items</strong>: List items</li>
+<li><strong>Cursor</strong>: Cursor</li>
+</ul>
+<h4 id="style-states">Style States<a class="headerlink" href="#style-states" title="Permanent link">&para;</a></h4>
+<p>LVGL components support multiple states, each state can have different styles, for example:</p>
+<ul>
+<li><strong>Default</strong>: Default state of component</li>
+<li><strong>Checked</strong>: When checkbox, switch, etc. is checked</li>
+<li><strong>Focused</strong>: When component has focus</li>
+<li><strong>Pressed</strong>: When button is pressed</li>
+<li><strong>Disabled</strong>: When component is disabled</li>
+</ul>
+<h4 id="style-library-functions">Style Library Functions<a class="headerlink" href="#style-library-functions" title="Permanent link">&para;</a></h4>
+<p><strong>Save Style</strong>
+1. Edit component's style
+2. Click "Save" button in style panel
+3. Enter style name
+4. Add description (optional)
+5. Click save</p>
+<p><strong>Apply Style</strong>
+1. Select target component
+2. Click "Apply" button in style panel
+3. Select style to apply from style library
+4. Click apply</p>
+<p><strong>Manage Style Library</strong>
+- <strong>Delete Style</strong>: Delete in style library</p>
+<hr />
+<p><strong>Workspace Docs</strong>: <a href="workspace.html">← Back to Workspace</a> | <a href="workspace-canvas.html">Canvas</a> | <a href="workspace-components.html">Components</a> | <a href="workspace-tree.html">Tree</a> | <a href="workspace-properties.html">Properties</a> | <a href="workspace-toolbar.html">Toolbar</a> | <a href="workspace-shortcuts.html">Shortcuts</a></p>
+              
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="workspace-tree.html" class="btn btn-neutral float-left" title="Tree"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="workspace-toolbar.html" class="btn btn-neutral float-right" title="Toolbar">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="workspace-tree.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="workspace-toolbar.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    /**
+     * 切换语言函数
+     * 自动在 zh-cn 和 en 之间切换，并保持在相同的页面
+     */
+    function switchLanguage() {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      // 判断当前是中文还是英文
+      if (currentPath.includes('/zh-cn/')) {
+        // 当前是中文，切换到英文
+        newPath = currentPath.replace('/zh-cn/', '/en/');
+      } else if (currentPath.includes('/en/')) {
+        // 当前是英文，切换到中文
+        newPath = currentPath.replace('/en/', '/zh-cn/');
+      } else {
+        // 如果路径不包含语言标识，提示用户
+        alert('无法确定当前语言');
+        return;
+      }
+      
+      // 跳转到新页面
+      window.location.href = newPath;
+    }
+    
+    /**
+     * 页面加载时设置语言链接文本
+     * 显示可以切换到的目标语言
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const langText = document.getElementById('lang-text');
+      
+      if (langText) {
+        if (currentPath.includes('/zh-cn/')) {
+          langText.textContent = '[English]';  // 当前中文，显示可切换到英文
+        } else if (currentPath.includes('/en/')) {
+          langText.textContent = '[中文]';      // 当前英文，显示可切换到中文
+        }
+      }
+    });
+  </script>
+
+
+</body>
+</html>

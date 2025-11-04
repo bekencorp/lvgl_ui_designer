@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Canvas - BEKEN LVGL UI Designer Documentation</title>
+  
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  <style>
+    /* 简洁的语言切换链接样式 */
+    .language-switcher-inline {
+      text-align: left;
+      padding: 8px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e1e4e5;
+    }
+    
+    .language-switch-link {
+      display: inline-block;
+      color: #2980b9;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    
+    .language-switch-link:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      .language-switcher-inline {
+        padding: 6px 0;
+        margin-bottom: 8px;
+      }
+      
+      .language-switch-link {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Canvas";
+        var mkdocs_page_input_path = "workspace-canvas.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> BEKEN LVGL UI Designer Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workspace</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="workspace.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Canvas</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#11-basic-canvas-operations">1.1 Basic Canvas Operations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#view-control">View Control</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-rulers-and-guidelines">1.2 Rulers and Guidelines</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ruler-system">Ruler System</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#guideline-features">Guideline Features</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-component-operations">1.3 Component Operations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#add-component">Add Component</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#select-component">Select Component</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#move-component">Move Component</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#resize">Resize</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#copy-and-paste">Copy and Paste</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#delete-component">Delete Component</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#component-operations">Component Operations</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-component-alignment">1.4 Component Alignment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-component-layering">1.5 Component Layering</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#16-lock-and-hide-components">1.6 Lock and Hide Components</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-components.html">Components</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-tree.html">Tree</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-properties.html">Properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-toolbar.html">Toolbar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-shortcuts.html">Shortcuts</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BEKEN LVGL UI Designer Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Workspace</li>
+      <li class="breadcrumb-item active">Canvas</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  <!-- 语言切换器 - 放在内容区域开始 -->
+  <div class="language-switcher-inline">
+    <a href="#" class="language-switch-link" onclick="switchLanguage(); return false;">
+      <span id="lang-text"></span>
+    </a>
+  </div>
+  
+                <h1 id="canvas-area">🎨 Canvas Area<a class="headerlink" href="#canvas-area" title="Permanent link">&para;</a></h1>
+<p>The canvas is the core area of visual design, where you can intuitively design UI interfaces.</p>
+<h3 id="11-basic-canvas-operations">1.1 Basic Canvas Operations<a class="headerlink" href="#11-basic-canvas-operations" title="Permanent link">&para;</a></h3>
+<h4 id="view-control">View Control<a class="headerlink" href="#view-control" title="Permanent link">&para;</a></h4>
+<p><strong>Zoom Canvas</strong>
+- Scroll mouse wheel: Zoom canvas (50% - 200%)
+- <code>Ctrl + Wheel</code>: Finer zoom control
+- Click zoom ratio button: Reset view to 100%</p>
+<p><strong>Pan Canvas</strong>
+- Hold and drag left mouse button: Move canvas view
+- Click zoom ratio button: Return to canvas center</p>
+<p><strong>Grid Display</strong>
+- Click canvas toolbar "View/Show Grid" button: Toggle grid display</p>
+<h3 id="12-rulers-and-guidelines">1.2 Rulers and Guidelines<a class="headerlink" href="#12-rulers-and-guidelines" title="Permanent link">&para;</a></h3>
+<h4 id="ruler-system">Ruler System<a class="headerlink" href="#ruler-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Rulers displayed at top and left of canvas</li>
+<li>Ruler scale adjusts automatically with canvas zoom</li>
+</ul>
+<h4 id="guideline-features">Guideline Features<a class="headerlink" href="#guideline-features" title="Permanent link">&para;</a></h4>
+<p><img alt="UI Designer Interface" src="images/guide_line.png" /></p>
+<p><strong>Create Guidelines</strong>
+- Double-click canvas area to create guidelines automatically
+- Drag from ruler to create guidelines (horizontal/vertical)</p>
+<p><strong>Adjust Guidelines</strong>
+- Click and drag guidelines to move position
+- Drag guidelines outside ruler to delete</p>
+<p><strong>Guideline Management</strong>
+- Toolbar "Show Guidelines" button: Show/hide all guidelines
+- Toolbar "Clear Guidelines" button: Delete all guidelines</p>
+<h3 id="13-component-operations">1.3 Component Operations<a class="headerlink" href="#13-component-operations" title="Permanent link">&para;</a></h3>
+<h4 id="add-component">Add Component<a class="headerlink" href="#add-component" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Select component from left component library</li>
+<li>Drag to canvas</li>
+<li>Release mouse to complete addition</li>
+</ol>
+<h4 id="select-component">Select Component<a class="headerlink" href="#select-component" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Single selection</strong>: Click component in canvas</li>
+<li><strong>Quick selection</strong>: Click corresponding component in component tree</li>
+</ul>
+<h4 id="move-component">Move Component<a class="headerlink" href="#move-component" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Free move</strong>: Drag component to target position</li>
+<li><strong>Numeric input</strong>: Enter precise coordinates in properties panel</li>
+</ul>
+<h4 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Drag resize</strong>: Drag control points at component corners to resize</li>
+<li><strong>Proportional scaling</strong>: Hold <code>Shift</code> while dragging to maintain aspect ratio</li>
+<li><strong>Precise setting</strong>: Enter width and height values in properties panel</li>
+</ul>
+<h4 id="copy-and-paste">Copy and Paste<a class="headerlink" href="#copy-and-paste" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>Ctrl + C</code>: Copy selected component</li>
+<li><code>Ctrl + V</code>: Paste component</li>
+<li>Right-click menu: Select "Copy"</li>
+<li>Use "Copy" in component tree operation menu</li>
+</ul>
+<h4 id="delete-component">Delete Component<a class="headerlink" href="#delete-component" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Press <code>Delete</code> key after selecting component</li>
+<li>Right-click menu and select "Delete"</li>
+<li>Delete in component tree operation menu</li>
+</ul>
+<h4 id="component-operations">Component Operations<a class="headerlink" href="#component-operations" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Right-click on selected component to show operation menu</li>
+</ul>
+<p><img alt="UI Designer Interface" src="images/right_click_menu.png" /></p>
+<ul>
+<li>Click the more operations button on the right of the component in the component tree to show the menu</li>
+</ul>
+<h3 id="14-component-alignment">1.4 Component Alignment<a class="headerlink" href="#14-component-alignment" title="Permanent link">&para;</a></h3>
+<p>When dragging a selected component, alignment lines with other components (horizontal/vertical) will be displayed</p>
+<h3 id="15-component-layering">1.5 Component Layering<a class="headerlink" href="#15-component-layering" title="Permanent link">&para;</a></h3>
+<p><strong>Adjust Layer</strong> (in component tree or right-click menu)
+- <strong>Bring to Front</strong>: Move component to top layer
+- <strong>Send to Back</strong>: Move component to bottom layer</p>
+<p><strong>Layer Rules</strong>
+- Later added components default to upper layer
+- Child components are always above parent components
+- Selected components show selection box</p>
+<h3 id="16-lock-and-hide-components">1.6 Lock and Hide Components<a class="headerlink" href="#16-lock-and-hide-components" title="Permanent link">&para;</a></h3>
+<p><strong>Lock Component</strong>
+- Right-click and select "Lock" or click lock icon in component tree
+- When locked, cannot select and edit, preventing accidental operations
+- Click again to unlock</p>
+<p><strong>Hide Component</strong>
+- Right-click and select "Hide" or click eye icon in component tree
+- When hidden, component is invisible but still exists in component tree
+- Click again to show</p>
+<hr />
+<p><strong>Workspace Docs</strong>: <a href="workspace.html">← Back to Workspace</a> | <a href="workspace-canvas.html">Canvas</a> | <a href="workspace-components.html">Components</a> | <a href="workspace-tree.html">Tree</a> | <a href="workspace-properties.html">Properties</a> | <a href="workspace-toolbar.html">Toolbar</a> | <a href="workspace-shortcuts.html">Shortcuts</a></p>
+              
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="workspace.html" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="workspace-components.html" class="btn btn-neutral float-right" title="Components">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="workspace.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="workspace-components.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    /**
+     * 切换语言函数
+     * 自动在 zh-cn 和 en 之间切换，并保持在相同的页面
+     */
+    function switchLanguage() {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      // 判断当前是中文还是英文
+      if (currentPath.includes('/zh-cn/')) {
+        // 当前是中文，切换到英文
+        newPath = currentPath.replace('/zh-cn/', '/en/');
+      } else if (currentPath.includes('/en/')) {
+        // 当前是英文，切换到中文
+        newPath = currentPath.replace('/en/', '/zh-cn/');
+      } else {
+        // 如果路径不包含语言标识，提示用户
+        alert('无法确定当前语言');
+        return;
+      }
+      
+      // 跳转到新页面
+      window.location.href = newPath;
+    }
+    
+    /**
+     * 页面加载时设置语言链接文本
+     * 显示可以切换到的目标语言
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const langText = document.getElementById('lang-text');
+      
+      if (langText) {
+        if (currentPath.includes('/zh-cn/')) {
+          langText.textContent = '[English]';  // 当前中文，显示可切换到英文
+        } else if (currentPath.includes('/en/')) {
+          langText.textContent = '[中文]';      // 当前英文，显示可切换到中文
+        }
+      }
+    });
+  </script>
+
+
+</body>
+</html>

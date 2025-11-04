@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>BEKEN LVGL UI Designer Documentation</title>
+  
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+  <style>
+    /* 简洁的语言切换链接样式 */
+    .language-switcher-inline {
+      text-align: left;
+      padding: 8px 0;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e1e4e5;
+    }
+    
+    .language-switch-link {
+      display: inline-block;
+      color: #2980b9;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    
+    .language-switch-link:hover {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    
+    /* 移动端适配 */
+    @media (max-width: 768px) {
+      .language-switcher-inline {
+        padding: 6px 0;
+        margin-bottom: 8px;
+      }
+      
+      .language-switch-link {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> BEKEN LVGL UI Designer Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#core-features">🎯 Core Features</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#visual-design">Visual Design</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rich-component-library">Rich Component Library</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#powerful-style-system">Powerful Style System</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#project-management">Project Management</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#documentation-navigation">📚 Documentation Navigation</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workspace</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace.html">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-canvas.html">Canvas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-components.html">Components</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-tree.html">Tree</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-properties.html">Properties</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-toolbar.html">Toolbar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="workspace-shortcuts.html">Shortcuts</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">BEKEN LVGL UI Designer Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+  <!-- 语言切换器 - 放在内容区域开始 -->
+  <div class="language-switcher-inline">
+    <a href="#" class="language-switch-link" onclick="switchLanguage(); return false;">
+      <span id="lang-text"></span>
+    </a>
+  </div>
+  
+                <h1 id="lvgl-ui-designer-documentation">LVGL UI Designer Documentation<a class="headerlink" href="#lvgl-ui-designer-documentation" title="Permanent link">&para;</a></h1>
+<p>Welcome to <strong>BEKEN LVGL UI Designer</strong>! This is a professional visual design tool for LVGL graphical interfaces, helping you quickly design and develop user interfaces for embedded devices.</p>
+<p><img alt="UI Designer Interface" src="images/workspace_design.png" /></p>
+<h2 id="core-features">🎯 Core Features<a class="headerlink" href="#core-features" title="Permanent link">&para;</a></h2>
+<h3 id="visual-design">Visual Design<a class="headerlink" href="#visual-design" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Drag-and-drop component design</li>
+<li>Real-time preview</li>
+<li>Grid and guideline assistance</li>
+</ul>
+<h3 id="rich-component-library">Rich Component Library<a class="headerlink" href="#rich-component-library" title="Permanent link">&para;</a></h3>
+<ul>
+<li>30+ LVGL components</li>
+<li>Buttons, input boxes, sliders and other common controls</li>
+<li>Charts, gauges and other advanced components</li>
+<li>Custom component support</li>
+</ul>
+<h3 id="powerful-style-system">Powerful Style System<a class="headerlink" href="#powerful-style-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Complete LVGL style property support</li>
+<li>Multi-state style editing</li>
+<li>Style library save and reuse</li>
+</ul>
+<h3 id="project-management">Project Management<a class="headerlink" href="#project-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Multi-project management</li>
+<li>Project import/export</li>
+<li>Example templates</li>
+</ul>
+<hr />
+<h2 id="documentation-navigation">📚 Documentation Navigation<a class="headerlink" href="#documentation-navigation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><a href="getting-started.html">Getting Started</a></strong> - 5-minute quick start guide</li>
+<li><strong><a href="workspace.html">Workspace</a></strong> - Detailed workspace features introduction</li>
+<li><strong><a href="faq.html">FAQ</a></strong> - Frequently asked questions</li>
+</ul>
+              
+
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="getting-started.html" class="btn btn-neutral float-right" title="Getting Started">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="getting-started.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+  
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+  <script>
+    /**
+     * 切换语言函数
+     * 自动在 zh-cn 和 en 之间切换，并保持在相同的页面
+     */
+    function switchLanguage() {
+      const currentPath = window.location.pathname;
+      let newPath;
+      
+      // 判断当前是中文还是英文
+      if (currentPath.includes('/zh-cn/')) {
+        // 当前是中文，切换到英文
+        newPath = currentPath.replace('/zh-cn/', '/en/');
+      } else if (currentPath.includes('/en/')) {
+        // 当前是英文，切换到中文
+        newPath = currentPath.replace('/en/', '/zh-cn/');
+      } else {
+        // 如果路径不包含语言标识，提示用户
+        alert('无法确定当前语言');
+        return;
+      }
+      
+      // 跳转到新页面
+      window.location.href = newPath;
+    }
+    
+    /**
+     * 页面加载时设置语言链接文本
+     * 显示可以切换到的目标语言
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPath = window.location.pathname;
+      const langText = document.getElementById('lang-text');
+      
+      if (langText) {
+        if (currentPath.includes('/zh-cn/')) {
+          langText.textContent = '[English]';  // 当前中文，显示可切换到英文
+        } else if (currentPath.includes('/en/')) {
+          langText.textContent = '[中文]';      // 当前英文，显示可切换到中文
+        }
+      }
+    });
+  </script>
+
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-11-04 09:08:05.353212+00:00
+-->
