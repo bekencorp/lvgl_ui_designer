@@ -36,5 +36,6 @@ Welcome to **BEKEN LVGL UI Designer**! This is a professional visual design tool
 - **[Getting Started](getting-started.md)** - 5-minute quick start guide
 - **[Workspace](workspace.md)** - Detailed workspace features introduction
 - **[Upcoming Features](roadmap.md)** - Roadmap and upcoming features
+- **[Release Notes](release-notes.md)** - View version update history
 - **[FAQ](faq.md)** - Frequently asked questions
 

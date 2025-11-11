@@ -27,6 +27,7 @@ Mastering keyboard shortcuts can greatly improve design efficiency. Below is a l
 | `Ctrl + C` | Copy Component | Copy selected component |
 | `Ctrl + V` | Paste Component | Paste copied component |
 | `Delete` | Delete Component | Delete selected component |
+| `↑、↓、←、→` | Move Component | Move selected component |
 
 ### 6.4 Component Adjustment
 
