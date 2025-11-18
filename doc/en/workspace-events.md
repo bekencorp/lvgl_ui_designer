@@ -117,10 +117,6 @@ Configure the corresponding parameters based on the selected action type:
 **Function Name**
 - Enter the name of the function to call (e.g., `handleButtonClick`)
 
-**Function Parameters**
-- Enter the parameters to pass to the function (in JSON format)
-- Example: `{"param1": "value1", "param2": 123}`
-
 ### Step 5: Save Event
 
 1. **Optional**: Add an event description (to explain the event's purpose for future maintenance)
@@ -164,14 +160,6 @@ In the canvas, you can view the connection relationships between events and targ
 1. In the canvas toolbar's **View** menu, select **Show Event Connections**
 2. The canvas will display connections between events and target components
 3. Click on a connection to quickly locate the corresponding event configuration
-
-## ⚠️ Notes
-
-1. **Component Must Be Selected**: You can only see the Events tab in the properties panel after selecting a component
-2. **Event Validation**: Before saving an event, the system will validate the completeness of the event configuration
-3. **Code Generation**: Events will be executed in the generated code
-4. **Event Order**: Multiple events are executed in the order they were added
-5. **Target Component**: When modifying properties/styles, ensure the target component exists and is accessible
 
 ## 🔗 Related Features
 

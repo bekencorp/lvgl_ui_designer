@@ -67,7 +67,7 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 - 💬 **社区讨论** - 加入我们的社区群组，与其他开发者交流
   - **QQ 群**: 834429661 (BEKEN LVGL UI DESIGNER)
   
-    ![QQ群二维码](doc/images/qrcode.png)
+    ![QQ群二维码](doc/images/qrcode1.png)
 
 ## 📄 许可证
 
