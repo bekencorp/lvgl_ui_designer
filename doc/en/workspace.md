@@ -14,7 +14,8 @@ The workspace is divided into 5 main functional areas:
 2. **[Component Library](workspace-components.md)** - Rich UI component library
 3. **[Component Tree](workspace-tree.md)** - Component hierarchy management
 4. **[Properties Panel](workspace-properties.md)** - Property and style editing
-5. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
+5. **[Event System](workspace-events.md)** - Component interaction event configuration
+6. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
 
 ### Keyboard Shortcuts
 
@@ -48,6 +49,11 @@ Click the links below to view detailed instructions for each module:
   - Basic property editing
   - Style editor (parts, states)
   - Style library functions
+
+- **[🎯 Event System](workspace-events.md)**
+  - Event editor usage
+  - Event types and action types
+  - Event configuration and examples
 
 - **[🛠️ Toolbar](workspace-toolbar.md)**
   - Project information and save status

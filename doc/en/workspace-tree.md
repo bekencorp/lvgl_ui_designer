@@ -69,4 +69,4 @@ Right-click component to popup menu:
 ---
 
 
-**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)
+**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Events](workspace-events.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)
