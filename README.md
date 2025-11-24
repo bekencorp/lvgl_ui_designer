@@ -70,7 +70,7 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 <a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="两轮车" width="400"></a>
 
-两轮车单页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
+两轮车多页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
 
 更多示例，可以查看 <a href="examples/">项目示例</a>
 
