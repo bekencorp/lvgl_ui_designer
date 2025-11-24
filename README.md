@@ -50,6 +50,30 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 - [版本历史](doc/zh-cn/release-notes.md) - 常见问题解答
 - [完整文档目录](doc/zh-cn/) - 查看所有文档
 
+## 🎯 项目示例
+
+我们提供了多个完整的项目示例，帮助您快速了解和学习如何使用 BEKEN LVGL UI Designer。点击下方图片可查看对应的示例项目。
+
+### ☕ 咖啡机
+
+<a href="examples/CoffeeMachine/"><img src="examples/CoffeeMachine/ScreenShot_1.png" alt="咖啡机界面示例" width="400"></a>
+
+一个咖啡机控制界面示例，展示了多种咖啡类型选择、进度显示、设置界面等复杂 UI 组件的使用。
+
+### 📹 两轮车-示例1
+
+<a href="examples/Dashcam/"><img src="examples/Dashcam/ScreenShot_1.png" alt="两轮车" width="400"></a>
+
+两轮车单页面示例，包含状态指示、导航信息、设备连接状态等常用嵌入式设备 UI 元素。
+
+### 🛴 两轮车-示例2
+
+<a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="两轮车" width="400"></a>
+
+两轮车单页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
+
+更多示例，可以查看 <a href="examples/">项目示例</a>
+
 ## 🔜 开发中的功能
 
 以下功能正在积极开发中，敬请期待：
