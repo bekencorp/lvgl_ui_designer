@@ -93,6 +93,37 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
   
     ![QQ群二维码](doc/images/qrcode1.png)
 
+## 🤝 参与贡献
+
+我们非常欢迎社区贡献！您的贡献可以帮助更多开发者学习和使用 BEKEN LVGL UI Designer。
+
+### 📦 贡献项目案例
+
+如果您使用 BEKEN LVGL UI Designer 创建了优秀的 UI 项目，欢迎您将项目案例分享到 `examples` 目录中！
+
+**如何贡献：**
+
+1. **Fork 本项目** - 在 GitHub 上 Fork 本仓库
+2. **准备您的项目** - 确保您的项目包含以下内容：
+   - 项目文件（`.bkprj` 文件）
+   - 项目截图（至少一张，建议命名为 `ScreenShot_1.png`）
+   - 资源文件（如有使用，放在 `assets` 目录中）
+   - 项目说明（可选，可创建 `README.md`）
+3. **提交 Pull Request** - 在 `examples` 目录下创建您的项目文件夹，提交 Pull Request
+4. **等待审核** - 我们会审核您的提交，对于优秀案例，我们将在 README 中进行展示
+
+**优秀案例标准：**
+- ✅ 界面设计美观、实用
+- ✅ 包含完整的项目文件和资源
+- ✅ 有清晰的截图展示
+- ✅ 能够帮助其他开发者学习
+
+**注意事项：**
+- 请确保您拥有所提交项目的完整版权
+- 提交的项目应使用 BEKEN LVGL UI Designer 创建
+
+感谢您的贡献！🎉
+
 ## 📄 许可证
 
 本项目采用 [MIT License](LICENSE) 许可证。
