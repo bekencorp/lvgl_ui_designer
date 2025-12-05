@@ -79,3 +79,17 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where custom components did not remove event bindings
 - Fixed issue where custom components could not be dragged into container components in some cases
 - Fixed generate font c file issue (add --no-compress params)
+
+### 1.1.2
+
+#### Features
+- Added support for multiple event types including Gesture, Key, and more
+- Added theme functionality in color library
+
+#### Optimizations
+- Optimized page list and component tree UI for easier page switching
+- Added alignment guide threshold settings to improve component alignment experience
+
+#### Bug Fixes
+- Fixed issue where project files could be corrupted and unable to open projects in some cases
+- Fixed issue where components could not be added to canvas in some cases
