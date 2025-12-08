@@ -8,7 +8,7 @@
 
 ## 📖 Project Introduction
 
-BEKEN LVGL UI Designer is a visual design tool for embedded device UI development, based on the LVGL (Light and Versatile Graphics Library) graphics library. Through drag-and-drop operations and real-time preview, you can quickly build beautiful and efficient user interfaces for embedded devices without writing large amounts of code.
+BEKEN LVGL UI Designer is a visual design tool for embedded device UI development, based on the LVGL (Light and Versatile Graphics Library) graphics library. Through drag-and-drop operations and real-time preview, you can quickly build beautiful and efficient user interfaces for embedded devices without writing large amounts of code. You can watch the [BEKEN LVGL UI Designer Introduction Video](https://www.bilibili.com/video/BV1jG2sBLEVS/?vd_source=eba4c960ff48c12219b5e4e5051256bf) to learn more about the core features of this tool.
 
 ## ✨ Core Features
 
