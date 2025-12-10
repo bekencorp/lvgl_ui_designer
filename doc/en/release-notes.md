@@ -93,3 +93,37 @@ This document records all version updates for BEKEN LVGL UI Designer.
 #### Bug Fixes
 - Fixed issue where project files could be corrupted and unable to open projects in some cases
 - Fixed issue where components could not be added to canvas in some cases
+
+### 1.1.3
+
+#### Features
+
+- Added border radius clipping field in container component styles, content beyond boundaries will be clipped when enabled
+- Added ScrollBar Part in container component styles, allowing scrollbar style configuration
+- Added drag-to-sort functionality in page list
+- Added page copy, move to top, and move to bottom functions
+- Added startup page setting, preview will display the startup page first
+- Added screen border radius setting in canvas toolbar, allowing adjustment of project canvas border radius shape
+
+#### Optimizations
+
+- Support importing the same project from different directories, will be displayed as multiple projects
+- Added restrictions for directory selection during project creation and import: only pure ASCII characters allowed, and spaces are not allowed
+- When parent container has Flex layout enabled, child components cannot be dragged or have X, Y properties modified
+- When container components are locked or hidden, child components cannot be dragged into them
+- Increased maximum nesting level of container components in canvas to 5 layers
+- Optimized home page project card display, content wraps when window is resized
+- Optimized page navigation event connection UI
+- Added restrictions for page and component names: numbers, letters, underscores, and cannot start with a numbers
+- Generate code named with component names to enhance code readability
+
+#### Bug Fixes
+
+- Fixed issue where events were not deleted after target page in page navigation events was deleted
+- Fixed issue where custom components could not be copied
+- Fixed issue where clicking workspace from top tab bar would cause errors
+- Fixed issue where color input could not be entered continuously, and continuous deletion would cause exceptions
+- Removed "Current Component" option from target component options in property and style modification events
+- Fixed the issue where symbol icons were not displayed in C simulation
+- Fixed the issue where some text was not displayed in C simulation
+- Fixed the issue where text was escaped in certain scenarios
