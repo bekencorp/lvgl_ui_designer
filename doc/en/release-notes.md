@@ -148,3 +148,31 @@ This document records all version updates for BEKEN LVGL UI Designer.
 
 - Fixed issue where "Generate Code" would overwrite user-written code (after modification, "Full Clean" will delete it, but "Generate Code" will not)
 - Fixed issue where replacing an image resource with the same name would still display the old image content
+
+### 1.1.5
+
+#### Features
+
+- Added feature: custom code in Page properties
+- Added feature: custom code in event action types
+
+
+#### Optimizations
+
+- Code generation: added void parameter in beken_ui_init function in beken_ui.h
+- Code generation: added custom folder (regenerating code will not overwrite this directory); users can freely add files to this directory; custom_func.h and custom_func.c have been moved to this directory
+- Code generation: added beken_generated.cmake file for forward compatibility when directory structure changes in future
+- Slider component style Indicator part now includes border style group, supports setting border radius
+- Optimized component dragging and selection logic when multiple components overlap
+- Simulation: hide mouse icon in C language simulation interface
+
+#### Bug Fixes
+
+- Fixed issue where roller component's Infinite mode did not work in C simulation
+- Fixed C compilation failure when selecting multiple border options
+- Fixed UI layout issues in save style and apply style dialogs
+- Fixed misalignment of indicator lines on ruler when child components are selected in containers
+
+#### Upgrade Notes
+
+- If compilation errors occur, delete the lv_port_pc_simulate folder in the project and regenerate code to compile (custom directory changes cause compilation failures in older version simulators)
