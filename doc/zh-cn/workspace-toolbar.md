@@ -80,13 +80,9 @@
 #### 代码预览
 
 **查看生成的代码**：
-1. 点击工具栏 **"代码预览"** 按钮
+1. 点击工具栏 **"C语言"** 或 **"MicroPtyon"** 按钮进行预览
 
 ![UI Designer 界面](/doc/images/preview.png)
-
-2. 在弹出窗口中选择代码语言：
-   - **C 语言** - 适用于标准 LVGL 项目
-   - **MicroPython** - 适用于 MicroPython 环境
 
 ---
 

@@ -83,11 +83,9 @@ After creating the project, you will enter the workspace interface, which consis
 
 ### Preview Interface
 
-1. Click the **"Code Preview"** button in the toolbar
-2. Select code language:
-   - **C Language** - For standard LVGL projects
-   - **MicroPython** - For MicroPython environments
-3. The simulator window will automatically pop up after compilation
+1. Select preview method:
+   - **C Language** - For standard LVGL projects, click **Generate + Compile + Run** in the menu
+   - **MicroPython** - For MicroPython environments, click **Generate + Run** in the menu
 4. Code is generated in the project directory
 
 ![UI Designer Interface](/doc/images/simulator.png)

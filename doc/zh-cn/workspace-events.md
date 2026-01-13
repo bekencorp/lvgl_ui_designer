@@ -169,8 +169,9 @@
 - **[属性面板](workspace-properties.md)** - 事件编辑器位于属性面板中
 - **[画布](workspace-canvas.md)** - 在画布中查看事件连线
 - **[组件树](workspace-tree.md)** - 管理组件层级关系
+- **[多语言功能](workspace-i18n.md)** - 在事件动作中使用多语言
 
 ---
 
-**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)
+**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [多语言](workspace-i18n.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)
 

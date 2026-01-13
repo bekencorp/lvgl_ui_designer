@@ -4,8 +4,8 @@
 
 ### Windows Platform
 
-- **Version**: v1.0.0
-- **Release Date**: 2025-11-04
+- **Version**: v1.1.5
+- **Release Date**: 2025-12-23
 
 **Download URL**:
 ```

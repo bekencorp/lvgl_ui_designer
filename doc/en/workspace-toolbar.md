@@ -80,13 +80,9 @@ The resource manager is used to manage all resource files used in the project.
 #### Code Preview
 
 **View Generated Code**:
-1. Click **"Code Preview"** button in toolbar
+1. Click **"C Language"** or **"MicroPtyon"**  button in toolbar
 
 ![UI Designer Interface](/doc/images/preview.png)
-
-2. In the popup window, select code language:
-   - **C Language** - For standard LVGL projects
-   - **MicroPython** - For MicroPython environments
 
 ---
 

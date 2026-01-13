@@ -176,3 +176,26 @@ This document records all version updates for BEKEN LVGL UI Designer.
 #### Upgrade Notes
 
 - If compilation errors occur, delete the lv_port_pc_simulate folder in the project and regenerate code to compile (custom directory changes cause compilation failures in older version simulators)
+
+### 1.1.6
+
+#### Features
+
+- Project now supports multi-language functionality (can be enabled in project settings; manage languages, translations, and international font schemes in the resource manager)
+- Added "Move Up" and "Move Down" options to the component right-click menu
+- Label, Button, and SpanGroup text fields now support [Static Text] setting
+- Added [Spacing] style group in styles, allowing setting of text character spacing
+
+#### Optimizations
+
+- Maximum project resolution increased to 2560 * 2560
+- Optimized layout of some fields in Scale component styles
+- Optimized code generation speed
+- Added a button to open the project path
+
+#### Bug Fixes
+
+- Fixed issue where selected color values in styles did not match rendered colors in interface at certain resolutions
+- Fixed issue where pressing Enter in input fields in custom component dialog would cause page refresh errors
+- Fixed some non-internationalized text
+- Updated documentation screenshots
