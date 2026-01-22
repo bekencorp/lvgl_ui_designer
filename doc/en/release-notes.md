@@ -199,3 +199,15 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where pressing Enter in input fields in custom component dialog would cause page refresh errors
 - Fixed some non-internationalized text
 - Updated documentation screenshots
+
+### 1.1.7
+
+#### Features
+
+- Added new version notification dialog
+
+#### Bug Fixes
+
+- Fixed issue where simulator interface would exceed screen boundaries when simulating large resolution projects
+- Fixed issue where text would display as garbled characters when selecting custom fonts
+- Fixed issue where List component Symbol setting was not working
