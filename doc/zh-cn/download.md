@@ -4,9 +4,6 @@
 
 ### Windows 平台
 
-- **版本**: v1.1.5
-- **发布日期**: 2025-12-23
-
 **下载地址**：
 ```
 https://dl.bekencorp.com/tools/lvgl_ui_designer

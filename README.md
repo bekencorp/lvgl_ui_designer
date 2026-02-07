@@ -60,7 +60,7 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 ### ☕ 咖啡机
 
-<a href="examples/CoffeeMachine/"><img src="examples/CoffeeMachine/ScreenShot_1.png" alt="咖啡机界面示例" width="400"></a>
+<a href="examples/coffee_machine_480_480/"><img src="examples/coffee_machine_480_480/ScreenShot_1.png" alt="咖啡机界面示例" width="400"></a>
 
 一个咖啡机控制界面示例，展示了多种咖啡类型选择、进度显示、设置界面等复杂 UI 组件的使用。
 
@@ -81,11 +81,8 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 ## 🔜 开发中的功能
 
 以下功能正在积极开发中，敬请期待：
-- [x] **完整的事件处理支持** - 为组件添加完整的事件处理支持
-- [x] **Flex 布局支持** - 为容器组件提供灵活的 Flex 布局支持
-- [x] **组件State和Flags设置** 
-- [ ] **云端资源库** - 从云端获取组件模板、样式等资源
-- [ ] **快速部署到开发板** 
+- [ ] **动画**
+- [ ] **复杂控件支持子控件** 
 
 ## 🤝 社区与支持
 

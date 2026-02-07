@@ -58,7 +58,7 @@ We provide multiple complete project examples to help you quickly understand and
 
 ### ☕ Coffee Machine
 
-<a href="examples/CoffeeMachine/"><img src="examples/CoffeeMachine/ScreenShot_1.png" alt="Coffee Machine Interface Example" width="400"></a>
+<a href="examples/coffee_machine_480_480/"><img src="examples/coffee_machine_480_480/ScreenShot_1.png" alt="Coffee Machine Interface Example" width="400"></a>
 
 A coffee machine control interface example that demonstrates the use of complex UI components such as multiple coffee type selection, progress display, and settings interface.
 
@@ -79,11 +79,8 @@ For more examples, please check <a href="examples/">Project Examples</a>
 ## 🔜 Features in Development
 
 The following features are actively under development, stay tuned:
-- [x] **Complete Event Handling Support** - Add complete event handling support for components
-- [x] **Flex Layout Support** - Provide flexible Flex layout support for container components
-- [x] **Component State and Flags Settings**
-- [ ] **Cloud Resource Library** - Get component templates, styles, and other resources from the cloud
-- [ ] **Quick Deployment to Development Board**
+- [ ] **Animation**
+- [ ] **Complex Components Support child components**
 
 ## 🤝 Community and Support
 

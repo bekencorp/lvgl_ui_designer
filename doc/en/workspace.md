@@ -15,7 +15,9 @@ The workspace is divided into 5 main functional areas:
 3. **[Component Tree](workspace-tree.md)** - Component hierarchy management
 4. **[Properties Panel](workspace-properties.md)** - Property and style editing
 5. **[Event System](workspace-events.md)** - Component interaction event configuration
-6. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
+6. **[Multi-language Feature](workspace-i18n.md)** - Multi-language configuration and usage
+7. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
+8. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
 
 ### Keyboard Shortcuts
 
@@ -54,6 +56,18 @@ Click the links below to view detailed instructions for each module:
   - Event editor usage
   - Event types and action types
   - Event configuration and examples
+
+- **[🌍 Multi-language Feature](workspace-i18n.md)**
+  - Enable multi-language in project settings
+  - Configure languages and translations in asset manager
+  - Enable translation in component properties
+  - Use multi-language in event actions
+
+- **[🔤 Custom Characters](workspace-custom_character.md)**
+  - Enable/disable custom characters feature
+  - Configure characters and character ranges
+  - FontAwesome icon support
+  - Sync function to auto-generate configuration
 
 - **[🛠️ Toolbar](workspace-toolbar.md)**
   - Project information and save status

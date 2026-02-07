@@ -24,6 +24,7 @@ Mastering keyboard shortcuts can greatly improve design efficiency. Below is a l
 
 | Shortcut | Function | Description |
 |----------|----------|-------------|
+| `Ctrl + Click` | Multi-Select Components | Hold Ctrl key and click components to multi-select |
 | `Ctrl + C` | Copy Component | Copy selected component |
 | `Ctrl + V` | Paste Component | Paste copied component |
 | `Delete` | Delete Component | Delete selected component |

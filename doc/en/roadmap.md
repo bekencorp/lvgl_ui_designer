@@ -2,10 +2,8 @@
 
 The following features are under development:
 
-- Complete event handling support for components
-- Flexible Flex layout support for container components
-- Enhanced component State and Flags display
-- Cloud resource download for component templates, styles, and more
+- Animation
+- Complex components support child components
 
 ---
 

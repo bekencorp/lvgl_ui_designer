@@ -211,3 +211,17 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where simulator interface would exceed screen boundaries when simulating large resolution projects
 - Fixed issue where text would display as garbled characters when selecting custom fonts
 - Fixed issue where List component Symbol setting was not working
+
+### 1.1.8
+
+#### Features
+
+- Font resources now support "Custom Characters" feature, allowing custom character content included in custom code (Access: Resource Manager => Font Resources => Custom Characters)
+- Support for multi-select control operations, hold Ctrl key to select multiple controls simultaneously for dragging
+- Component right-click menu now includes alignment function, supporting quick alignment after multi-selecting controls
+
+#### Bug Fixes
+
+- Fixed issue where component tree list could sometimes display as empty
+- Fixed issue where custom component dialog triggered by component operations in component tree would display at incorrect position
+- Fixed issue where one-click cleanup of unused resources would also clear font files
