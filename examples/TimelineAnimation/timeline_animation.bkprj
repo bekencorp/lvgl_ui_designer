@@ -1,0 +1,3090 @@
+{
+  "id": "proj_1777540516785_f84190bf",
+  "name": "timeline_animation",
+  "description": "",
+  "path": "C:\\Users\\fulia\\Documents\\lvgl_designer\\examples\\TimelineAnimation",
+  "lvglVersion": "9.3",
+  "resolution": {
+    "width": 480,
+    "height": 272
+  },
+  "project": {
+    "projectId": "proj_1776664964824_0hx1k4o3d",
+    "name": "timeline_animation",
+    "description": "",
+    "version": "1.0.0",
+    "createdAt": "2026-04-20T06:02:44.823Z",
+    "updatedAt": "2026-04-30T09:16:27.623Z",
+    "settings": {
+      "theme": "default",
+      "screenWidth": 480,
+      "screenHeight": 272,
+      "lvglVersion": "9.3",
+      "backgroundColor": "#f5f5f5",
+      "gridSize": 20,
+      "snapToGrid": true,
+      "screen_radius": 0
+    },
+    "pages": [
+      {
+        "wid": "page_3",
+        "type": "page",
+        "name": "page_1",
+        "description": "page_3",
+        "components": [
+          {
+            "wid": "page_3_obj_1",
+            "type": "obj",
+            "name": "obj_1",
+            "description": "LVGL Obj component for displaying rich text with multiple spans",
+            "category": {
+              "id": "layout",
+              "name": "布局容器",
+              "description": "Layout and container components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 139,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 38,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 200,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 200,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "SCROLLABLE",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 10,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#ff5722ff",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 100,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": true,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "FULL"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "pad_left",
+                          "name": "pad_left",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_bottom",
+                          "name": "pad_bottom",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_top",
+                          "name": "pad_top",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_right",
+                          "name": "pad_right",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_row",
+                          "name": "pad_row",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_column",
+                          "name": "pad_column",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "border": true,
+                        "padding": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "scrollbar",
+                  "name": "SCROLLBAR",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [],
+                      "enabledGroups": {}
+                    }
+                  ],
+                  "target": "main"
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": []
+          },
+          {
+            "wid": "page_3_obj_2",
+            "type": "obj",
+            "name": "obj_2",
+            "description": "LVGL Obj component for displaying rich text with multiple spans",
+            "category": {
+              "id": "layout",
+              "name": "布局容器",
+              "description": "Layout and container components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 171,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 97,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 50,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 50,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "SCROLLABLE",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#ff0000ff",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 1,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#d9d9d900",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 25,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": true,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "FULL"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "pad_left",
+                          "name": "pad_left",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_bottom",
+                          "name": "pad_bottom",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_top",
+                          "name": "pad_top",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_right",
+                          "name": "pad_right",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_row",
+                          "name": "pad_row",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_column",
+                          "name": "pad_column",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "border": true,
+                        "padding": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "scrollbar",
+                  "name": "SCROLLBAR",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [],
+                      "enabledGroups": {}
+                    }
+                  ],
+                  "target": "main"
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": []
+          },
+          {
+            "wid": "page_3_obj_3",
+            "type": "obj",
+            "name": "obj_3",
+            "description": "LVGL Obj component for displaying rich text with multiple spans",
+            "category": {
+              "id": "layout",
+              "name": "布局容器",
+              "description": "Layout and container components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 258,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 97,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 50,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 50,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "SCROLLABLE",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#ff0000ff",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 1,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#d9d9d900",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 25,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": true,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "FULL"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "pad_left",
+                          "name": "pad_left",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_bottom",
+                          "name": "pad_bottom",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_top",
+                          "name": "pad_top",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_right",
+                          "name": "pad_right",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_row",
+                          "name": "pad_row",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_column",
+                          "name": "pad_column",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "border": true,
+                        "padding": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "scrollbar",
+                  "name": "SCROLLBAR",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [],
+                      "enabledGroups": {}
+                    }
+                  ],
+                  "target": "main"
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": []
+          },
+          {
+            "wid": "page_3_obj_4",
+            "type": "obj",
+            "name": "obj_4",
+            "description": "LVGL Obj component for displaying rich text with multiple spans",
+            "category": {
+              "id": "layout",
+              "name": "布局容器",
+              "description": "Layout and container components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 191,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 107,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 100,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 100,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "SCROLLABLE",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 23,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#ff5722ff",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 50,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": false,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "BOTTOM"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "pad_left",
+                          "name": "pad_left",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_bottom",
+                          "name": "pad_bottom",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_top",
+                          "name": "pad_top",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_right",
+                          "name": "pad_right",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_row",
+                          "name": "pad_row",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "pad_column",
+                          "name": "pad_column",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "padding"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "border": true,
+                        "padding": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "scrollbar",
+                  "name": "SCROLLBAR",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [],
+                      "enabledGroups": {}
+                    }
+                  ],
+                  "target": "main"
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": []
+          },
+          {
+            "wid": "page_3_button_1",
+            "type": "button",
+            "name": "button_1",
+            "description": "LVGL button component for creating clickable buttons",
+            "category": {
+              "id": "button",
+              "name": "按钮",
+              "description": "Button components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 17,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 205,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 100,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 40,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "text",
+                "name": "text",
+                "type": "Common/String",
+                "value": "Left",
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "is_text_static",
+                "name": "is_text_static",
+                "type": "Common/Boolean",
+                "value": false,
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "long_mode",
+                "name": "long_mode",
+                "type": "Common/Enum",
+                "value": "WRAP",
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SCROLL_ON_FOCUS",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#2d75b9ff",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "font_family",
+                          "name": "font_family",
+                          "type": "LVGL/Font",
+                          "value": "montserrat",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "font_size",
+                          "name": "font_size",
+                          "type": "Common/Number",
+                          "value": 16,
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_color",
+                          "name": "text_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_opa",
+                          "name": "text_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_align",
+                          "name": "text_align",
+                          "type": "Common/Enum",
+                          "value": "LEFT",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_letter_space",
+                          "name": "text_letter_space",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "space"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 5,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": false,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "FULL"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "font": true,
+                        "space": true,
+                        "border": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": [
+              {
+                "id": "event_1777378297599_wlb527hns",
+                "eventType": "LV_EVENT_CLICKED",
+                "actionType": "trigger_animation",
+                "actionParams": {
+                  "animationId": "timeline_anim_1777378195293_9siuuz",
+                  "targetComponentId": "page_3_obj_2",
+                  "repeatCount": 1,
+                  "reverse": false
+                },
+                "enabled": true,
+                "createdAt": "2026-04-28T12:11:37.599Z",
+                "updatedAt": "2026-04-28T12:12:12.269Z"
+              },
+              {
+                "id": "event_1777378303419_1yquj5zmh",
+                "eventType": "LV_EVENT_CLICKED",
+                "actionType": "trigger_animation",
+                "actionParams": {
+                  "animationId": "timeline_anim_1777378239166_bms0ig",
+                  "targetComponentId": "page_3_obj_3",
+                  "repeatCount": 1,
+                  "reverse": false
+                },
+                "enabled": true,
+                "createdAt": "2026-04-28T12:11:43.419Z",
+                "updatedAt": "2026-04-28T12:12:09.910Z"
+              }
+            ]
+          },
+          {
+            "wid": "page_3_button_2",
+            "type": "button",
+            "name": "button_2",
+            "description": "LVGL button component for creating clickable buttons",
+            "category": {
+              "id": "button",
+              "name": "按钮",
+              "description": "Button components"
+            },
+            "properties": [
+              {
+                "pid": "x",
+                "name": "x",
+                "type": "Common/Number",
+                "value": 371,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "y",
+                "name": "y",
+                "type": "Common/Number",
+                "value": 203,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "width",
+                "name": "width",
+                "type": "Common/Number",
+                "value": 100,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "height",
+                "name": "height",
+                "type": "Common/Number",
+                "value": 40,
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex",
+                "name": "flex",
+                "type": "Common/Enum",
+                "value": "NO_LAYOUT",
+                "isVisible": true,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_flow",
+                "name": "flex_flow",
+                "type": "Common/Enum",
+                "value": "ROW",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_main_align",
+                "name": "flex_main_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_cross_align",
+                "name": "flex_cross_align",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "flex_track",
+                "name": "flex_track",
+                "type": "Common/Enum",
+                "value": "START",
+                "isVisible": false,
+                "category": "layout"
+              },
+              {
+                "pid": "text",
+                "name": "text",
+                "type": "Common/String",
+                "value": "Right",
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "is_text_static",
+                "name": "is_text_static",
+                "type": "Common/Boolean",
+                "value": false,
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "long_mode",
+                "name": "long_mode",
+                "type": "Common/Enum",
+                "value": "WRAP",
+                "isVisible": true,
+                "category": "general"
+              },
+              {
+                "pid": "flags",
+                "name": "flags",
+                "type": "LVGL/FLAGS",
+                "value": [
+                  "SCROLL_CHAIN_HOR",
+                  "SCROLL_ELASTIC",
+                  "CLICKABLE",
+                  "SCROLL_CHAIN",
+                  "SCROLL_ON_FOCUS",
+                  "SNAPPABLE",
+                  "CLICK_FOCUSABLE",
+                  "SCROLL_CHAIN_VER",
+                  "PRESS_LOCK",
+                  "SCROLL_WITH_ARROW",
+                  "GESTURE_BUBBLE",
+                  "SCROLL_MOMENTUM"
+                ],
+                "isVisible": true,
+                "category": "behavior"
+              },
+              {
+                "pid": "state",
+                "name": "state",
+                "type": "LVGL/STATE",
+                "value": [],
+                "isVisible": true,
+                "category": "behavior"
+              }
+            ],
+            "style": {
+              "parts": [
+                {
+                  "id": "main",
+                  "name": "MAIN",
+                  "target": "main",
+                  "states": [
+                    {
+                      "id": "default",
+                      "name": "DEFAULT",
+                      "enabled": true,
+                      "styles": [
+                        {
+                          "pid": "bg_color",
+                          "name": "bg_color",
+                          "type": "LVGL/Color",
+                          "value": "#2d75b9ff",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_opa",
+                          "name": "bg_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_dir",
+                          "name": "bg_grad_dir",
+                          "type": "Common/Enum",
+                          "value": "NONE",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_color",
+                          "name": "bg_grad_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_opa",
+                          "name": "bg_grad_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_main_stop",
+                          "name": "bg_main_stop",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_grad_stop",
+                          "name": "bg_grad_stop",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_src",
+                          "name": "bg_img_src",
+                          "type": "LVGL/ImageSrc",
+                          "value": "",
+                          "isVisible": true,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_opa",
+                          "name": "bg_img_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor",
+                          "name": "bg_img_recolor",
+                          "type": "LVGL/Color",
+                          "value": "#ffffff00",
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "bg_img_recolor_opa",
+                          "name": "bg_img_recolor_opa",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": false,
+                          "category": "background"
+                        },
+                        {
+                          "pid": "font_family",
+                          "name": "font_family",
+                          "type": "LVGL/Font",
+                          "value": "montserrat",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "font_size",
+                          "name": "font_size",
+                          "type": "Common/Number",
+                          "value": 16,
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_color",
+                          "name": "text_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_opa",
+                          "name": "text_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_align",
+                          "name": "text_align",
+                          "type": "Common/Enum",
+                          "value": "LEFT",
+                          "isVisible": true,
+                          "category": "font"
+                        },
+                        {
+                          "pid": "text_letter_space",
+                          "name": "text_letter_space",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "space"
+                        },
+                        {
+                          "pid": "border_width",
+                          "name": "border_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_color",
+                          "name": "border_color",
+                          "type": "LVGL/Color",
+                          "value": "#ffffffff",
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "radius",
+                          "name": "radius",
+                          "type": "Common/Number",
+                          "value": 5,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "clip_corner",
+                          "name": "clip_corner",
+                          "type": "Common/Boolean",
+                          "value": false,
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_opa",
+                          "name": "border_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "border_side",
+                          "name": "border_side",
+                          "type": "Common/MultiOption",
+                          "value": [
+                            "FULL"
+                          ],
+                          "isVisible": true,
+                          "category": "border"
+                        },
+                        {
+                          "pid": "shadow_color",
+                          "name": "shadow_color",
+                          "type": "LVGL/Color",
+                          "value": "#1e7fcfff",
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_opa",
+                          "name": "shadow_opa",
+                          "type": "Common/Number",
+                          "value": 255,
+                          "isVisible": false,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_width",
+                          "name": "shadow_width",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_spread",
+                          "name": "shadow_spread",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_x",
+                          "name": "shadow_offset_x",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        },
+                        {
+                          "pid": "shadow_offset_y",
+                          "name": "shadow_offset_y",
+                          "type": "Common/Number",
+                          "value": 0,
+                          "isVisible": true,
+                          "category": "shadow"
+                        }
+                      ],
+                      "enabledGroups": {
+                        "background": true,
+                        "font": true,
+                        "space": true,
+                        "border": true,
+                        "shadow": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "children": [],
+            "layout": {
+              "parent": "",
+              "zIndex": 0,
+              "isLocked": false,
+              "isVisible": true
+            },
+            "events": [
+              {
+                "id": "event_1777529940526_8glrn5cx0",
+                "eventType": "LV_EVENT_CLICKED",
+                "actionType": "trigger_animation",
+                "actionParams": {
+                  "animationId": "timeline_anim_1777529849750_xykf9k",
+                  "targetComponentId": "page_3_obj_3",
+                  "repeatCount": 1,
+                  "reverse": false
+                },
+                "enabled": true,
+                "createdAt": "2026-04-30T06:19:00.526Z",
+                "updatedAt": "2026-04-30T06:19:00.526Z"
+              },
+              {
+                "id": "event_1777529947128_d32ehrqln",
+                "eventType": "LV_EVENT_CLICKED",
+                "actionType": "trigger_animation",
+                "actionParams": {
+                  "animationId": "timeline_anim_1777529865671_g7klqo",
+                  "targetComponentId": "page_3_obj_2",
+                  "repeatCount": 1,
+                  "reverse": false
+                },
+                "enabled": true,
+                "createdAt": "2026-04-30T06:19:07.128Z",
+                "updatedAt": "2026-04-30T06:19:07.128Z"
+              }
+            ]
+          }
+        ],
+        "style": {
+          "parts": [
+            {
+              "id": "main",
+              "name": "MAIN",
+              "target": "main",
+              "states": [
+                {
+                  "id": "default",
+                  "name": "DEFAULT",
+                  "enabled": true,
+                  "styles": [
+                    {
+                      "pid": "bg_color",
+                      "name": "bg_color",
+                      "type": "LVGL/Color",
+                      "value": "#ffffffff",
+                      "isVisible": true,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_opa",
+                      "name": "bg_opa",
+                      "type": "Common/Number",
+                      "value": 255,
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_grad_dir",
+                      "name": "bg_grad_dir",
+                      "type": "Common/Enum",
+                      "value": "NONE",
+                      "isVisible": true,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_grad_color",
+                      "name": "bg_grad_color",
+                      "type": "LVGL/Color",
+                      "value": "#ffffffff",
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_grad_opa",
+                      "name": "bg_grad_opa",
+                      "type": "Common/Number",
+                      "value": 255,
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_main_stop",
+                      "name": "bg_main_stop",
+                      "type": "Common/Number",
+                      "value": 0,
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_grad_stop",
+                      "name": "bg_grad_stop",
+                      "type": "Common/Number",
+                      "value": 255,
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_img_src",
+                      "name": "bg_img_src",
+                      "type": "LVGL/ImageSrc",
+                      "value": "",
+                      "isVisible": true,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_img_opa",
+                      "name": "bg_img_opa",
+                      "type": "Common/Number",
+                      "value": 255,
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_img_recolor",
+                      "name": "bg_img_recolor",
+                      "type": "LVGL/Color",
+                      "value": "#ffffff00",
+                      "isVisible": false,
+                      "category": "background"
+                    },
+                    {
+                      "pid": "bg_img_recolor_opa",
+                      "name": "bg_img_recolor_opa",
+                      "type": "Common/Number",
+                      "value": 0,
+                      "isVisible": false,
+                      "category": "background"
+                    }
+                  ],
+                  "enabledGroups": {
+                    "background": true
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "events": [
+          {
+            "id": "event_1777377642900_4dw2gugpd",
+            "eventType": "LV_EVENT_SCREEN_LOADED",
+            "actionType": "trigger_animation",
+            "actionParams": {
+              "animationId": "timeline_anim_1777377592606_yvxv3b",
+              "targetComponentId": "page_3_obj_1",
+              "repeatCount": 0,
+              "reverse": true
+            },
+            "enabled": true,
+            "createdAt": "2026-04-28T12:00:42.900Z",
+            "updatedAt": "2026-04-28T12:00:42.900Z"
+          },
+          {
+            "id": "event_1777377862539_wt4rz53c8",
+            "eventType": "LV_EVENT_SCREEN_LOADED",
+            "actionType": "trigger_animation",
+            "actionParams": {
+              "animationId": "timeline_anim_1777377770363_kguw14",
+              "targetComponentId": "page_3_obj_2",
+              "repeatCount": 0,
+              "reverse": true
+            },
+            "enabled": true,
+            "createdAt": "2026-04-28T12:04:22.539Z",
+            "updatedAt": "2026-04-28T12:04:22.539Z"
+          },
+          {
+            "id": "event_1777377942134_jqbtfqk5e",
+            "eventType": "LV_EVENT_SCREEN_LOADED",
+            "actionType": "trigger_animation",
+            "actionParams": {
+              "animationId": "timeline_anim_1777377770363_kguw14",
+              "targetComponentId": "page_3_obj_3",
+              "repeatCount": 0,
+              "reverse": true
+            },
+            "enabled": true,
+            "createdAt": "2026-04-28T12:05:42.134Z",
+            "updatedAt": "2026-04-28T12:05:54.325Z"
+          },
+          {
+            "id": "event_1777378090089_83416sbh4",
+            "eventType": "LV_EVENT_SCREEN_LOADED",
+            "actionType": "trigger_animation",
+            "actionParams": {
+              "animationId": "timeline_anim_1777378050884_2ipls7",
+              "targetComponentId": "page_3_obj_4",
+              "repeatCount": 0,
+              "reverse": true
+            },
+            "enabled": true,
+            "createdAt": "2026-04-28T12:08:10.089Z",
+            "updatedAt": "2026-04-28T12:08:10.089Z"
+          }
+        ],
+        "createdAt": "2026-04-28T02:15:47.741Z",
+        "updatedAt": "2026-04-30T09:12:56.554Z",
+        "isStartPage": true
+      }
+    ],
+    "componentLibraries": [],
+    "animations": [
+      {
+        "id": "anim_1777017705571_hcgf452l4",
+        "name": "test",
+        "description": "dddd",
+        "testComponentId": "page_1_label_1",
+        "properties": [
+          {
+            "id": "prop_1777017289316_ytjezbw8w",
+            "propertyName": "x",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "ease_in",
+            "startValue": 0,
+            "endValue": 100,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777021802394_vqj6j6uqe",
+            "propertyName": "y",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "ease_in",
+            "startValue": 0,
+            "endValue": 100,
+            "relative": false,
+            "earlyApply": true
+          }
+        ],
+        "createdAt": "2026-04-24T08:01:45.571Z",
+        "updatedAt": "2026-04-24T09:19:51.767Z"
+      },
+      {
+        "id": "anim_1777022923807_ms40fgubf",
+        "name": "test1",
+        "description": "test1",
+        "testComponentId": "page_1_label_1",
+        "properties": [
+          {
+            "id": "prop_1777022762529_9nn7alt5q",
+            "propertyName": "x",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "ease_in_out",
+            "startValue": 209,
+            "endValue": 109,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777022821530_c4gqnzx80",
+            "propertyName": "width",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 60,
+            "endValue": 100,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777022879711_7dzvltdcx",
+            "propertyName": "height",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 20,
+            "endValue": 100,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777022899232_w882geakv",
+            "propertyName": "border_width",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 0,
+            "endValue": 10,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777022941682_vxuwqyvqj",
+            "propertyName": "pad_top",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 0,
+            "endValue": 50,
+            "relative": false,
+            "earlyApply": true
+          }
+        ],
+        "createdAt": "2026-04-24T09:28:43.807Z",
+        "updatedAt": "2026-04-24T09:48:49.835Z"
+      },
+      {
+        "id": "anim_1777027703246_ip8p9xpgg",
+        "name": "movein",
+        "testComponentId": "page_1_obj_1",
+        "properties": [
+          {
+            "id": "prop_1777027679286_t58wntzol",
+            "propertyName": "x",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 0,
+            "endValue": 200,
+            "relative": false,
+            "earlyApply": true
+          },
+          {
+            "id": "prop_1777027693239_56fpxb6ni",
+            "propertyName": "width",
+            "duration": 500,
+            "delay": 0,
+            "repeatCount": 1,
+            "repeatDelay": 0,
+            "reverseDuration": 0,
+            "reverseDelay": 0,
+            "path": "linear",
+            "startValue": 0,
+            "endValue": 200,
+            "relative": false,
+            "earlyApply": true
+          }
+        ],
+        "createdAt": "2026-04-24T10:48:23.246Z",
+        "updatedAt": "2026-04-24T10:48:23.246Z"
+      }
+    ],
+    "timelineAnimations": [
+      {
+        "id": "timeline_anim_1777377592606_yvxv3b",
+        "name": "脸",
+        "testComponentId": "page_3_obj_1",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777377595931_m20ud1",
+            "timeMs": 1000,
+            "properties": [
+              {
+                "id": "timeline_prop_border_color_1777377607973_16o7",
+                "propertyName": "border_color",
+                "value": 4295032831
+              }
+            ],
+            "easing": "ease_in_out"
+          },
+          {
+            "id": "timeline_keyframe_1777377662315_99kluu",
+            "timeMs": 2000,
+            "properties": [
+              {
+                "id": "timeline_prop_border_color_1777377668661_rkmt",
+                "propertyName": "border_color",
+                "value": 8589869311
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-28T11:59:52.606Z",
+        "updatedAt": "2026-04-30T06:13:28.927Z"
+      },
+      {
+        "id": "timeline_anim_1777377770363_kguw14",
+        "name": "眼睛",
+        "testComponentId": "page_3_obj_2",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777377774405_aekb2k",
+            "timeMs": 500,
+            "properties": [
+              {
+                "id": "timeline_prop_y_1777377818700_i6qz",
+                "propertyName": "y",
+                "value": 137
+              },
+              {
+                "id": "timeline_prop_height_1777377783468_xsgv",
+                "propertyName": "height",
+                "value": 10
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-28T12:02:50.363Z",
+        "updatedAt": "2026-04-30T06:21:24.139Z"
+      },
+      {
+        "id": "timeline_anim_1777378050884_2ipls7",
+        "name": "嘴唇",
+        "testComponentId": "page_3_obj_4",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777378054519_bw1e5k",
+            "timeMs": 1033,
+            "properties": [
+              {
+                "id": "timeline_prop_border_width_1777378063282_6lch",
+                "propertyName": "border_width",
+                "value": 3
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-28T12:07:30.884Z",
+        "updatedAt": "2026-04-28T12:07:54.018Z"
+      },
+      {
+        "id": "timeline_anim_1777378195293_9siuuz",
+        "name": "右眼朝左看",
+        "testComponentId": "page_3_obj_3",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777378198080_4cf3qb",
+            "timeMs": 992,
+            "properties": [
+              {
+                "id": "timeline_prop_x_1777378202046_r9hu",
+                "propertyName": "x",
+                "value": 230
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-28T12:09:55.293Z",
+        "updatedAt": "2026-04-30T06:14:11.734Z"
+      },
+      {
+        "id": "timeline_anim_1777378239166_bms0ig",
+        "name": "左眼朝左看",
+        "testComponentId": "page_3_obj_2",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777378241991_djiubu",
+            "timeMs": 992,
+            "properties": [
+              {
+                "id": "timeline_prop_x_1777378246710_sl8a",
+                "propertyName": "x",
+                "value": 160
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-28T12:10:39.165Z",
+        "updatedAt": "2026-04-28T12:11:09.498Z"
+      },
+      {
+        "id": "timeline_anim_1777529849750_xykf9k",
+        "name": "右眼朝右看",
+        "testComponentId": "page_3_obj_3",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777529870919_6m7m2a",
+            "timeMs": 1000,
+            "properties": [
+              {
+                "id": "timeline_prop_x_1777529885073_8wfw",
+                "propertyName": "x",
+                "value": 280
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-30T06:17:29.750Z",
+        "updatedAt": "2026-04-30T06:20:54.680Z"
+      },
+      {
+        "id": "timeline_anim_1777529865671_g7klqo",
+        "name": "左眼朝右看",
+        "testComponentId": "page_3_obj_2",
+        "transition": {
+          "path": "linear",
+          "delay": 0,
+          "repeatCount": 1,
+          "repeatDelay": 0,
+          "reverseDuration": 0,
+          "reverseDelay": 0,
+          "relative": false,
+          "earlyApply": true
+        },
+        "keyframes": [
+          {
+            "id": "timeline_keyframe_1777529875387_2i24iq",
+            "timeMs": 1000,
+            "properties": [
+              {
+                "id": "timeline_prop_x_1777529897879_kdnb",
+                "propertyName": "x",
+                "value": 200
+              }
+            ],
+            "easing": "linear"
+          }
+        ],
+        "createdAt": "2026-04-30T06:17:45.671Z",
+        "updatedAt": "2026-04-30T06:21:05.877Z"
+      }
+    ]
+  },
+  "version": "1.1.9",
+  "updatedAt": "2026-04-30T09:16:27.623Z",
+  "config": {
+    "i18n": {
+      "enableI18n": true,
+      "defaultLanguage": "en"
+    }
+  },
+  "i18n": {
+    "languages": [
+      {
+        "languageCode": "zh_CN",
+        "fontName": "montserrat"
+      },
+      {
+        "languageCode": "en",
+        "fontName": "montserrat"
+      }
+    ],
+    "texts": [
+      {
+        "key": "hello",
+        "translations": {
+          "zh_CN": {
+            "text": "Hello"
+          },
+          "en": {
+            "text": "Olleh"
+          }
+        }
+      }
+    ],
+    "fontSchemes": []
+  }
+}

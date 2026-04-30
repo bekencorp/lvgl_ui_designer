@@ -76,6 +76,12 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 两轮车多页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
 
+### ⏱️ 时间轴动画
+
+<a href="examples/TimelineAnimation/"><img src="examples/TimelineAnimation/ScreenShot_1.png" alt="时间轴动画示例" width="400"></a>
+
+时间轴动画示例，展示了通过时间轴编排实现多元素联动动画的页面效果。
+
 更多示例，可以查看 <a href="examples/">项目示例</a>
 
 ## 🔜 开发中的功能

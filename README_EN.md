@@ -74,6 +74,12 @@ A single-page two-wheeler example containing common embedded device UI elements 
 
 A multi-page two-wheeler example showcasing typical dashboard UI design such as speed display, battery indicator, mode switching, and settings interface.
 
+### ⏱️ Timeline Animation
+
+<a href="examples/TimelineAnimation/"><img src="examples/TimelineAnimation/ScreenShot_1.png" alt="Timeline Animation Example" width="400"></a>
+
+A timeline animation example that demonstrates coordinated multi-element transitions orchestrated with timeline sequencing.
+
 For more examples, please check <a href="examples/">Project Examples</a>
 
 ## 🔜 Features in Development
