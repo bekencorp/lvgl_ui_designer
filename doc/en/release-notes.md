@@ -225,3 +225,26 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where component tree list could sometimes display as empty
 - Fixed issue where custom component dialog triggered by component operations in component tree would display at incorrect position
 - Fixed issue where one-click cleanup of unused resources would also clear font files
+
+
+### 1.1.9
+
+#### Features
+
+- Added **Timeline Animation** feature: supports keyframe-based editing of component property animations, with instant in-canvas preview (batch preview and one-click stop are supported)
+- Added animation event type: animations can now be triggered as event actions
+- Added a component animation property panel and Animation editor entry for a smoother configuration flow
+
+#### Optimizations
+
+- Added a single-instance lock at startup to prevent multiple LVGL UI Designer instances from being opened simultaneously
+- Added an antivirus whitelist guide in the workspace terminal: when the tool is detected as being blocked by antivirus software, a one-click guide is provided to help resolve it
+
+#### Bug Fixes
+
+- Fixed issue where the "Custom Characters" sync in Font Resources did not collect the tab title text of the TabView component
+- Fixed UI errors in the component tree when components were copied and pasted multiple times
+- Fixed an occasional timeout issue when generating fonts with large character sets
+- Fixed i18n string import errors in some scenarios
+- Fixed unnecessary "Retrying image conversion" warnings when multiple components reference the same image resource and were converted in parallel
+- Fixed C code generation failures caused by a missing image output directory in some scenarios

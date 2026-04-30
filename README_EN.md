@@ -79,7 +79,6 @@ For more examples, please check <a href="examples/">Project Examples</a>
 ## 🔜 Features in Development
 
 The following features are actively under development, stay tuned:
-- [ ] **Animation**
 - [ ] **Complex Components Support child components**
 
 ## 🤝 Community and Support

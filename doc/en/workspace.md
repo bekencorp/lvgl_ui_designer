@@ -16,8 +16,9 @@ The workspace is divided into 5 main functional areas:
 4. **[Properties Panel](workspace-properties.md)** - Property and style editing
 5. **[Event System](workspace-events.md)** - Component interaction event configuration
 6. **[Multi-language Feature](workspace-i18n.md)** - Multi-language configuration and usage
-7. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
-8. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
+7. **[Timeline Animation](workspace-animation.md)** - Animation tracks and keyframes
+8. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
+9. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
 
 ### Keyboard Shortcuts
 
@@ -62,6 +63,12 @@ Click the links below to view detailed instructions for each module:
   - Configure languages and translations in asset manager
   - Enable translation in component properties
   - Use multi-language in event actions
+
+- **[⏱️ Timeline Animation](workspace-animation.md)**
+  - Manage animation tracks and keyframes
+  - Configure property changes over time
+  - Preview and tune animation behavior
+  - Trigger animations through events
 
 - **[🔤 Custom Characters](workspace-custom_character.md)**
   - Enable/disable custom characters feature

@@ -16,8 +16,9 @@
 4. **[属性面板](workspace-properties.md)** - 属性和样式编辑
 5. **[事件系统](workspace-events.md)** - 组件交互事件配置
 6. **[多语言功能](workspace-i18n.md)** - 多语言配置和使用
-7. **[自定义字符](workspace-custom_character.md)** - 自定义字符配置和管理
-8. **[工具栏](workspace-toolbar.md)** - 项目管理和常用功能
+7. **[时间轴动画](workspace-animation.md)** - 动画轨道与关键帧配置
+8. **[自定义字符](workspace-custom_character.md)** - 自定义字符配置和管理
+9. **[工具栏](workspace-toolbar.md)** - 项目管理和常用功能
 
 ### 快捷键
 
@@ -62,6 +63,12 @@
   - 资源管理中配置语言和翻译
   - 组件属性启用翻译
   - 事件动作中使用多语言
+
+- **[⏱️ 时间轴动画](workspace-animation.md)**
+  - 动画轨道与关键帧管理
+  - 属性随时间变化配置
+  - 动画预览与调参
+  - 通过事件触发动画
 
 - **[🔤 自定义字符](workspace-custom_character.md)**
   - 启用/禁用自定义字符功能

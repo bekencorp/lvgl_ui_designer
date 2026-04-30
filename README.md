@@ -81,7 +81,6 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 ## 🔜 开发中的功能
 
 以下功能正在积极开发中，敬请期待：
-- [ ] **动画**
 - [ ] **复杂控件支持子控件** 
 
 ## 🤝 社区与支持
