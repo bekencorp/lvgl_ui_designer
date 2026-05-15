@@ -85,7 +85,8 @@ For more examples, please check <a href="examples/">Project Examples</a>
 ## 🔜 Features in Development
 
 The following features are actively under development, stay tuned:
-- [ ] **Complex Components Support child components**
+
+- AI chat interface generation
 
 ## 🤝 Community and Support
 

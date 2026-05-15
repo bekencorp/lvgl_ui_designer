@@ -248,3 +248,17 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed i18n string import errors in some scenarios
 - Fixed unnecessary "Retrying image conversion" warnings when multiple components reference the same image resource and were converted in parallel
 - Fixed C code generation failures caused by a missing image output directory in some scenarios
+
+
+### 1.1.10
+
+#### Features
+
+- Win component supports adding child components
+- Tileview component supports adding multiple Tile pages; each Tile page supports adding child components
+- Menu component supports adding multiple menu items; each menu item supports adding child components
+- Tabview component supports adding multiple tab bars; each tab page supports adding child components
+
+#### Bug Fixes
+
+- Fixed C compilation error when setting a background image on the Arc component Knob style

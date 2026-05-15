@@ -1,6 +1,6 @@
 # BEKEN LVGL UI Designer
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[License](LICENSE)
 
 **Language**: 中文 | [English](README_EN.md)
 
@@ -10,27 +10,29 @@
 
 BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设计工具，基于 LVGL（Light and Versatile Graphics Library）图形库开发。通过拖拽式操作和实时预览，让您能够快速构建美观、高效的嵌入式设备用户界面，无需手写大量代码即可完成 UI 设计工作。您可以通过观看[博通集成UI开发工具“BEKEN LVGL UI Designer”介绍](https://www.bilibili.com/video/BV1jG2sBLEVS/?vd_source=eba4c960ff48c12219b5e4e5051256bf)视频，进一步了解该工具的核心功能。
 
-
-
 ## ✨ 核心功能
 
 ### 🎨 可视化设计
+
 - **拖拽式组件设计** - 通过简单的拖拽操作即可将组件添加到画布
 - **实时预览** - 所见即所得，实时查看设计效果
 - **网格和参考线辅助** - 精确对齐组件，提升设计效率
 
 ### 🧩 丰富的组件库
+
 - **30+ 种 LVGL 组件** - 涵盖常用 UI 控件和高级组件
 - **常用控件** - 按钮、输入框、滑块、列表等基础控件
 - **高级组件** - 图表、仪表盘、进度条、日历等复杂组件
 - **自定义组件支持** - 支持创建和复用自定义组件库
 
 ### ⚙️ 强大的样式系统
+
 - **完整的 LVGL 样式属性支持** - 覆盖所有 LVGL 样式配置项
 - **多状态样式编辑** - 支持组件的不同状态样式设置
 - **样式库保存和复用** - 保存常用样式，快速应用到其他组件
 
 ### 📁 项目管理
+
 - **多项目管理** - 轻松管理多个 UI 项目
 - **项目导入** - 方便项目迁移和分享
 - **示例模板** - 内置多种项目模板，快速开始设计
@@ -43,8 +45,7 @@ BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设�
 
 ### 下载链接
 
-https://dl.bekencorp.com/tools/lvgl_ui_designer
-
+[https://dl.bekencorp.com/tools/lvgl_ui_designer](https://dl.bekencorp.com/tools/lvgl_ui_designer)
 
 ## 📚 文档
 
@@ -60,34 +61,35 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 ### ☕ 咖啡机
 
-<a href="examples/coffee_machine_480_480/"><img src="examples/coffee_machine_480_480/ScreenShot_1.png" alt="咖啡机界面示例" width="400"></a>
+
 
 一个咖啡机控制界面示例，展示了多种咖啡类型选择、进度显示、设置界面等复杂 UI 组件的使用。
 
 ### 📹 两轮车-示例1
 
-<a href="examples/Dashcam/"><img src="examples/Dashcam/ScreenShot_1.png" alt="两轮车" width="400"></a>
+
 
 两轮车单页面示例，包含状态指示、导航信息、设备连接状态等常用嵌入式设备 UI 元素。
 
 ### 🛴 两轮车-示例2
 
-<a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="两轮车" width="400"></a>
+
 
 两轮车多页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
 
 ### ⏱️ 时间轴动画
 
-<a href="examples/TimelineAnimation/"><img src="examples/TimelineAnimation/ScreenShot_1.png" alt="时间轴动画示例" width="400"></a>
+
 
 时间轴动画示例，展示了通过时间轴编排实现多元素联动动画的页面效果。
 
-更多示例，可以查看 <a href="examples/">项目示例</a>
+更多示例，可以查看 项目示例
 
 ## 🔜 开发中的功能
 
 以下功能正在积极开发中，敬请期待：
-- [ ] **复杂控件支持子控件** 
+
+- AI对话生成界面
 
 ## 🤝 社区与支持
 
@@ -96,7 +98,6 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 - 📧 **问题反馈** - 如遇到问题或有功能建议，欢迎提交 [Issue](../../issues)
 - 💬 **社区讨论** - 加入我们的社区群组，与其他开发者交流
   - **QQ 群**: 834429661 (BEKEN LVGL UI DESIGNER)
-  
     ![QQ群二维码](doc/images/qrcode1.png)
 
 ## 🤝 参与贡献
@@ -111,20 +112,22 @@ https://dl.bekencorp.com/tools/lvgl_ui_designer
 
 1. **Fork 本项目** - 在 GitHub 上 Fork 本仓库
 2. **准备您的项目** - 确保您的项目包含以下内容：
-   - 项目文件（`.bkprj` 文件）
-   - 项目截图（至少一张，建议命名为 `ScreenShot_1.png`）
-   - 资源文件（如有使用，放在 `assets` 目录中）
-   - 项目说明（可选，可创建 `README.md`）
+  - 项目文件（`.bkprj` 文件）
+  - 项目截图（至少一张，建议命名为 `ScreenShot_1.png`）
+  - 资源文件（如有使用，放在 `assets` 目录中）
+  - 项目说明（可选，可创建 `README.md`）
 3. **提交 Pull Request** - 在 `examples` 目录下创建您的项目文件夹，提交 Pull Request
 4. **等待审核** - 我们会审核您的提交，对于优秀案例，我们将在 README 中进行展示
 
 **优秀案例标准：**
+
 - ✅ 界面设计美观、实用
 - ✅ 包含完整的项目文件和资源
 - ✅ 有清晰的截图展示
 - ✅ 能够帮助其他开发者学习
 
 **注意事项：**
+
 - 请确保您拥有所提交项目的完整版权
 - 提交的项目应使用 BEKEN LVGL UI Designer 创建
 
