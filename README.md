@@ -61,29 +61,29 @@ BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设�
 
 ### ☕ 咖啡机
 
-
+<a href="examples/coffee_machine_480_480/"><img src="examples/coffee_machine_480_480/ScreenShot_1.png" alt="咖啡机界面示例" width="400"></a>
 
 一个咖啡机控制界面示例，展示了多种咖啡类型选择、进度显示、设置界面等复杂 UI 组件的使用。
 
 ### 📹 两轮车-示例1
 
-
+<a href="examples/Dashcam/"><img src="examples/Dashcam/ScreenShot_1.png" alt="两轮车界面示例" width="400"></a>
 
 两轮车单页面示例，包含状态指示、导航信息、设备连接状态等常用嵌入式设备 UI 元素。
 
 ### 🛴 两轮车-示例2
 
-
+<a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="两轮车仪表盘界面示例" width="400"></a>
 
 两轮车多页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
 
 ### ⏱️ 时间轴动画
 
-
+<a href="examples/TimelineAnimation/"><img src="examples/TimelineAnimation/ScreenShot_1.png" alt="时间轴动画示例" width="400"></a>
 
 时间轴动画示例，展示了通过时间轴编排实现多元素联动动画的页面效果。
 
-更多示例，可以查看 项目示例
+更多示例，请查看 <a href="examples/">项目示例</a>
 
 ## 🔜 开发中的功能
 
