@@ -262,3 +262,21 @@ This document records all version updates for BEKEN LVGL UI Designer.
 #### Bug Fixes
 
 - Fixed C compilation error when setting a background image on the Arc component Knob style
+
+### 1.1.11
+
+#### Features
+
+- Added multi-language support for List, MsgBox, Tabview, Menu, Win, and Dropdown components
+- Added font deletion feature
+
+#### Optimizations
+
+- Translation preview now follows changes to the default language
+- Animimg component now displays the file names of added images
+
+#### Bug Fixes
+
+- Fixed occasional style display disorder in the properties panel
+- Fixed data consistency issue where style groups manually disabled by users were automatically re-enabled during custom component migration/completion
+- Fixed missing resource dependency copy issue when saving custom components
