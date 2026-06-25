@@ -279,6 +279,7 @@ This document records all version updates for BEKEN LVGL UI Designer.
 
 - Fixed occasional style display disorder in the properties panel
 - Fixed data consistency issue where style groups manually disabled by users were automatically re-enabled during custom component migration/completion
+<<<<<<< HEAD
 - Fixed missing resource dependency copy issue when saving custom components
 
 ### 2.0.1
@@ -286,3 +287,6 @@ This document records all version updates for BEKEN LVGL UI Designer.
 #### Features
 
 - 🚀Added support for generating and modifying UI in the project through conversational interaction in AI editors (Cursor, TRAE)
+=======
+- Fixed missing resource dependency copy issue when saving custom components
+>>>>>>> cede94f4b0be849c5769364f117128f17bfeaa40
