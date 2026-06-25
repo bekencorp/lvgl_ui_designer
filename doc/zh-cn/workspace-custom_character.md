@@ -242,4 +242,4 @@ Symbols: ©®™€£¥
 
 ---
 
-**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [多语言](workspace-i18n.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)
+**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [多语言](workspace-i18n.md) | [AI设计](workspace-ai-design.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)

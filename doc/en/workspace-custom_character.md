@@ -242,4 +242,4 @@ This configuration will include ASCII, common Chinese characters, and special sy
 
 ---
 
-**Workspace Documentation**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Component Library](workspace-components.md) | [Component Tree](workspace-tree.md) | [Properties Panel](workspace-properties.md) | [Event System](workspace-events.md) | [Multi-language](workspace-i18n.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)
+**Workspace Documentation**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Component Library](workspace-components.md) | [Component Tree](workspace-tree.md) | [Properties Panel](workspace-properties.md) | [Event System](workspace-events.md) | [Multi-language](workspace-i18n.md) | [AI Design](workspace-ai-design.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)

@@ -84,7 +84,17 @@
 
 ![UI Designer 界面](/doc/images/preview.png)
 
+### 5.6 AI 设计
+
+工具栏提供 **「AI设计」** 入口，可启动 Cursor 或 TRAE，通过自然语言辅助完成界面设计。
+
+- 需先在电脑上安装 Cursor 或 TRAE
+- 首次使用会自动安装 MCP 与 Skill 环境
+- AI 修改画布后，可在画布底部 **保存** 或 **撤销**
+
+详细说明请参阅 **[AI设计](workspace-ai-design.md)** 文档。
+
 ---
 
 
-**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)
+**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [AI设计](workspace-ai-design.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)

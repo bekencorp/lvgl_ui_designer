@@ -84,6 +84,16 @@ The resource manager is used to manage all resource files used in the project.
 
 ![UI Designer Interface](/doc/images/preview.png)
 
+### 5.6 AI Design
+
+The toolbar provides an **AI Design** entry to launch Cursor or TRAE and describe UI changes in natural language.
+
+- Install Cursor or TRAE on your computer first
+- MCP and Skill are installed automatically on first use
+- After AI edits the canvas, use **Save** or **Rollback** at the bottom of the canvas
+
+See **[AI Design](workspace-ai-design.md)** for full instructions and troubleshooting.
+
 ---
 
-**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Events](workspace-events.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)
+**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Events](workspace-events.md) | [AI Design](workspace-ai-design.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)

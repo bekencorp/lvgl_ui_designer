@@ -19,6 +19,7 @@ The workspace is divided into 5 main functional areas:
 7. **[Timeline Animation](workspace-animation.md)** - Animation tracks and keyframes
 8. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
 9. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
+10. **[AI Design](workspace-ai-design.md)** - Design UI with AI tools
 
 ### Keyboard Shortcuts
 
@@ -82,6 +83,12 @@ Click the links below to view detailed instructions for each module:
   - View control
   - Resource manager
   - Preview and code generation
+
+- **[🤖 AI Design](workspace-ai-design.md)**
+  - Launch Cursor / TRAE from the toolbar
+  - MCP and Skill environment setup
+  - Describe UI requirements in natural language
+  - Confirm changes and troubleshooting
 
 ### Other
 

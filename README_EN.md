@@ -82,11 +82,6 @@ A timeline animation example that demonstrates coordinated multi-element transit
 
 For more examples, please check <a href="examples/">Project Examples</a>
 
-## 🔜 Features in Development
-
-The following features are actively under development, stay tuned:
-
-- AI chat interface generation
 
 ## 🤝 Community and Support
 
