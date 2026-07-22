@@ -1,6 +1,6 @@
 # AI 设计
 
-AI 设计让你通过 **Cursor** 或 **TRAE** 等 AI 工具，用自然语言描述界面需求。AI 会通过 MCP 工具直接修改 Beken LVGL UI Designer 画布上的内容，无需逐个手动拖拽组件。
+AI 设计让你通过 **Cursor**、**Codex**、**TRAE** 或 **TRAE CN** 等 AI 工具，用自然语言描述界面需求。AI 会通过 MCP 工具直接修改 Beken LVGL UI Designer 画布上的内容，无需逐个手动拖拽组件。
 
 ---
 
@@ -8,7 +8,7 @@ AI 设计让你通过 **Cursor** 或 **TRAE** 等 AI 工具，用自然语言描
 
 1. 在 Designer 中**打开项目**并**进入工作台**
 2. 点击工具栏 **「AI设计」** 按钮
-3. 在下拉菜单中选择 **Cursor** 或 **TRAE**（需已在电脑上安装对应 AI 工具）
+3. 在下拉菜单中选择 **Cursor**、**Codex**、**TRAE** 或 **TRAE CN**（需已在电脑上安装对应 AI 工具）
 
 下拉菜单会显示各 AI 工具的安装状态（已安装 / 未安装）。
 
@@ -29,12 +29,12 @@ AI 设计让你通过 **Cursor** 或 **TRAE** 等 AI 工具，用自然语言描
 
 | 检查方式 | 正常表现 |
 | --- | --- |
-| Cursor：**设置 → MCP** | 列表中有 `beken_lvgl_ui_designer`，状态为已连接 |
-| TRAE：MCP 配置 | 已注册 `beken_lvgl_ui_designer` 且可正常连接 |
+| Cursor / Codex：**设置 → MCP** | 列表中有 `beken_lvgl_ui_designer`，状态为已连接 |
+| TRAE / TRAE CN：MCP 配置 | 已注册 `beken_lvgl_ui_designer` 且可正常连接 |
 
 ![Cursor MCP](/doc/images/mcp_status.png)
 
-**若 MCP 未加载：** 完全关闭 Cursor / TRAE，重新从 Designer 工具栏 **「AI设计」** 入口打开。**不要**手动打开其它文件夹或 `.ai-workspace` 以外的目录。
+**若 MCP 未加载：** 完全关闭 Cursor / Codex / TRAE / TRAE CN，重新从 Designer 工具栏 **「AI设计」** 入口打开。**不要**手动打开其它文件夹或 `.ai-workspace` 以外的目录。
 
 ### 全局 AI 设置
 
@@ -45,6 +45,126 @@ AI 设计让你通过 **Cursor** 或 **TRAE** 等 AI 工具，用自然语言描
 - 手动安装、更新或卸载 AI 设计环境
 
 > 安装或卸载 MCP / Skill 后，请**完全退出**对应 AI 工具，再从「AI设计」重新打开。
+
+### 其它 AI 编辑器手动配置
+
+如果使用的 AI 编辑器没有出现在 Designer 的 **「AI设计」** 下拉菜单中，但该编辑器支持 MCP 和 Skill，可以按本节手动配置。
+
+Cursor / Codex / TRAE / TRAE CN 建议优先使用 **「AI设计」** 入口或 **设置 → AI设置** 自动安装；只有自动安装不可用或需要排查配置时，再参考本节手动配置。工具目录中已经包含 MCP 和 Skill，不需要额外下载。
+
+请先找到 Beken LVGL UI Designer 的应用安装目录。MCP 和 Skill 都在该目录下的 `resources` 文件夹中。
+
+MCP 脚本位于：
+
+```text
+<应用安装目录>\resources\mcp\lvgl-ui-designer-mcp.cjs
+```
+
+Skill 目录位于：
+
+```text
+<应用安装目录>\resources\ai-skill\beken-lvgl-ui-designer
+```
+
+#### 1. 配置 MCP
+
+请在 AI 编辑器的 MCP 配置文件中加入 `beken_lvgl_ui_designer`。不同编辑器的 MCP 配置文件位置不同，请以对应编辑器文档为准。
+
+常见配置路径示例：
+
+Cursor：
+
+```text
+C:\Users\<用户名>\.cursor\mcp.json
+```
+
+TRAE：
+
+```text
+C:\Users\<用户名>\AppData\Roaming\Trae\User\mcp.json
+```
+
+TRAE CN：
+
+```text
+C:\Users\<用户名>\AppData\Roaming\Trae CN\User\mcp.json
+```
+
+Codex：
+
+```text
+C:\Users\<用户名>\.codex\config.toml
+```
+
+如果配置文件里已有其它 MCP server，Cursor / TRAE 只合并 `mcpServers.beken_lvgl_ui_designer` 这一项；Codex 只合并 `[mcp_servers.beken_lvgl_ui_designer]` 表，不要覆盖其它配置：
+
+```json
+{
+  "mcpServers": {
+    "beken_lvgl_ui_designer": {
+      "type": "stdio",
+      "command": "<应用安装目录>\\LVGL-UI-Designer.exe",
+      "args": [
+        "<应用安装目录>\\resources\\mcp\\lvgl-ui-designer-mcp.cjs"
+      ],
+      "env": {
+        "ELECTRON_RUN_AS_NODE": "1",
+        "LVGL_DESIGNER_BRIDGE": "http://127.0.0.1:39001"
+      }
+    }
+  }
+}
+```
+
+请将 `command` 改成当前电脑上应用安装目录下的 `LVGL-UI-Designer.exe` 路径，并将 `args` 中的路径改成同一目录下的 `resources\mcp\lvgl-ui-designer-mcp.cjs`。打包版使用应用自带的运行环境启动 MCP，不需要额外安装 Node.js。
+
+#### 2. 安装 Skill
+
+将应用目录中的 Skill 目录完整复制到 AI 编辑器的 Skill 目录。不同编辑器的 Skill 目录位置不同，请以对应编辑器文档为准。
+
+常见目录示例：
+
+Cursor：
+
+```text
+从：
+<应用安装目录>\resources\ai-skill\beken-lvgl-ui-designer
+
+复制到：
+C:\Users\<用户名>\.cursor\skills\beken-lvgl-ui-designer
+```
+
+Codex：
+
+```text
+从：
+<应用安装目录>\resources\ai-skill\beken-lvgl-ui-designer
+
+复制到：
+C:\Users\<用户名>\.codex\skills\beken-lvgl-ui-designer
+```
+
+TRAE：
+
+```text
+从：
+<应用安装目录>\resources\ai-skill\beken-lvgl-ui-designer
+
+复制到：
+C:\Users\<用户名>\.trae\skills\beken-lvgl-ui-designer
+```
+
+TRAE CN：
+
+```text
+C:\Users\<用户名>\.trae-cn\skills\beken-lvgl-ui-designer
+```
+
+> Skill 目录必须完整复制，不能只复制 `SKILL.md`。
+
+#### 3. 重启并验证
+
+完成 MCP 配置和 Skill 复制后，请完全退出对应 AI 编辑器，再重新打开。随后启动 Designer，打开项目并进入工作台，在 AI 编辑器的 MCP 页面确认 `beken_lvgl_ui_designer` 已连接。
 
 ---
 
@@ -106,12 +226,12 @@ AI 可通过 MCP 完成常见设计操作，例如：
 | 现象 | 处理方式 |
 | --- | --- |
 | **「AI设计」按钮灰色不可用** | 当前有 C 语言或 MicroPython 预览 / 编译 / 运行在进行。停止相关操作后再试。 |
-| **下拉菜单显示「未安装」** | 电脑上未安装 Cursor 或 TRAE。请先安装对应 AI 工具。 |
+| **下拉菜单显示「未安装」** | 电脑上未安装 Cursor、Codex 或 TRAE。请先安装对应 AI 工具。 |
 | **提示无法修改界面 / 未打开项目** | 请先在 Designer 中打开项目并进入工作台，再从「AI设计」启动。 |
 | **提示未进入工作台** | 请从项目管理页进入项目工作台，不要停留在首页。 |
 | **提示工作区不匹配** | AI 对话窗口目录不是当前项目的 `.ai-workspace`。请关闭 AI 工具，从 Designer 工具栏「AI设计」**重新打开当前项目**，不要手动切换目录或打开其它项目。 |
 | **AI 在终端执行 MCP 命令报错** | MCP 是 AI 工具内置能力，**不是**终端命令。说明 MCP 未正确加载，请从「AI设计」重新启动 AI 工具。 |
-| **安装或更新 MCP 后仍异常** | 完全退出 Cursor / TRAE 后重新从「AI设计」打开；或在 **设置 → AI设置** 中卸载 MCP 再重装。 |
+| **安装或更新 MCP 后仍异常** | 完全退出 Cursor / Codex / TRAE / TRAE CN 后重新从「AI设计」打开；或在 **设置 → AI设置** 中卸载 MCP 再重装。 |
 | **AI 修改不符合预期** | 点击「撤销」，用更具体的描述重试（页面名、布局、组件类型、颜色等）。建议小步迭代。 |
 | **Bridge 状态异常** | 在 **设置 → AI设置** 中点击「刷新状态」，确认 Bridge 正常运行后再使用。 |
 

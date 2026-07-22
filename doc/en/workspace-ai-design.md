@@ -1,6 +1,6 @@
 # AI Design
 
-AI Design lets you describe UI requirements in natural language using **Cursor** or **TRAE**. The AI modifies the canvas in Beken LVGL UI Designer through MCP tools, without placing every component manually.
+AI Design lets you describe UI requirements in natural language using **Cursor**, **Codex**, **TRAE**, or **TRAE CN**. The AI modifies the canvas in Beken LVGL UI Designer through MCP tools, without placing every component manually.
 
 ---
 
@@ -8,7 +8,7 @@ AI Design lets you describe UI requirements in natural language using **Cursor**
 
 1. **Open a project** and **enter the workspace** in Designer
 2. Click the **「AI Design」** button on the toolbar
-3. Choose **Cursor** or **TRAE** from the dropdown (the corresponding AI tool must be installed on your computer)
+3. Choose **Cursor**, **Codex**, **TRAE**, or **TRAE CN** from the dropdown (the corresponding AI tool must be installed on your computer)
 
 The dropdown shows whether each AI tool is installed.
 
@@ -29,12 +29,12 @@ After setup, the AI tool opens the **`.ai-workspace`** folder under the current 
 
 | How to check | Expected result |
 | --- | --- |
-| Cursor: **Settings → MCP** | `beken_lvgl_ui_designer` is listed and connected |
-| TRAE: MCP configuration | `beken_lvgl_ui_designer` is registered and connected |
+| Cursor / Codex: **Settings → MCP** | `beken_lvgl_ui_designer` is listed and connected |
+| TRAE / TRAE CN: MCP configuration | `beken_lvgl_ui_designer` is registered and connected |
 
 ![Cursor MCP](/doc/images/mcp_status.png)
 
-**If MCP is not loaded:** fully quit Cursor or TRAE, then reopen from the Designer toolbar **AI Design** entry. **Do not** open another folder or a path other than the project's `.ai-workspace` manually.
+**If MCP is not loaded:** fully quit Cursor, Codex, TRAE, or TRAE CN, then reopen from the Designer toolbar **AI Design** entry. **Do not** open another folder or a path other than the project's `.ai-workspace` manually.
 
 ### Global AI Settings
 
@@ -45,6 +45,126 @@ In **Settings → AI Settings** you can:
 - Install, update, or uninstall the AI design environment
 
 > After installing or uninstalling MCP / Skill, **fully quit** the AI tool and reopen it from **AI Design**.
+
+### Manual Setup For Other AI Editors
+
+If your AI editor does not appear in Designer's **AI Design** dropdown, but it supports MCP and Skills, you can configure it manually.
+
+For Cursor / Codex / TRAE / TRAE CN, prefer launching from **AI Design** or installing from **Settings → AI Settings**. Use this manual setup only when automatic installation is unavailable or when you need to inspect the configuration. The application directory already includes MCP and Skill files, so no extra download is required.
+
+First find the Beken LVGL UI Designer application directory. MCP and Skill are both under its `resources` folder.
+
+MCP script:
+
+```text
+<Application Directory>\resources\mcp\lvgl-ui-designer-mcp.cjs
+```
+
+Skill directory:
+
+```text
+<Application Directory>\resources\ai-skill\beken-lvgl-ui-designer
+```
+
+#### 1. Configure MCP
+
+Add `beken_lvgl_ui_designer` to your AI editor's MCP configuration file. The configuration file location differs by editor, so check your editor's documentation.
+
+Common configuration paths:
+
+Cursor:
+
+```text
+C:\Users\<username>\.cursor\mcp.json
+```
+
+TRAE:
+
+```text
+C:\Users\<username>\AppData\Roaming\Trae\User\mcp.json
+```
+
+TRAE CN:
+
+```text
+C:\Users\<username>\AppData\Roaming\Trae CN\User\mcp.json
+```
+
+Codex:
+
+```text
+C:\Users\<username>\.codex\config.toml
+```
+
+If the configuration file already has other MCP servers, Cursor / TRAE only merge the `mcpServers.beken_lvgl_ui_designer` entry. Codex only merges the `[mcp_servers.beken_lvgl_ui_designer]` table. Do not overwrite other configuration.
+
+```json
+{
+  "mcpServers": {
+    "beken_lvgl_ui_designer": {
+      "type": "stdio",
+      "command": "<Application Directory>\\LVGL-UI-Designer.exe",
+      "args": [
+        "<Application Directory>\\resources\\mcp\\lvgl-ui-designer-mcp.cjs"
+      ],
+      "env": {
+        "ELECTRON_RUN_AS_NODE": "1",
+        "LVGL_DESIGNER_BRIDGE": "http://127.0.0.1:39001"
+      }
+    }
+  }
+}
+```
+
+Replace `command` with the path to `LVGL-UI-Designer.exe` in the application directory, and replace the `args` path with `resources\mcp\lvgl-ui-designer-mcp.cjs` under the same directory. The packaged app uses its own runtime to start MCP, so Node.js does not need to be installed separately.
+
+#### 2. Install Skill
+
+Copy the full Skill directory from the application directory into your AI editor's Skill directory. The Skill directory location differs by editor, so check your editor's documentation.
+
+Common directory examples:
+
+Cursor:
+
+```text
+From:
+<Application Directory>\resources\ai-skill\beken-lvgl-ui-designer
+
+To:
+C:\Users\<username>\.cursor\skills\beken-lvgl-ui-designer
+```
+
+Codex:
+
+```text
+From:
+<Application Directory>\resources\ai-skill\beken-lvgl-ui-designer
+
+To:
+C:\Users\<username>\.codex\skills\beken-lvgl-ui-designer
+```
+
+TRAE:
+
+```text
+From:
+<Application Directory>\resources\ai-skill\beken-lvgl-ui-designer
+
+To:
+C:\Users\<username>\.trae\skills\beken-lvgl-ui-designer
+```
+
+TRAE CN:
+
+```text
+C:\Users\<username>\.trae-cn\skills\beken-lvgl-ui-designer
+```
+
+> Copy the entire Skill directory. Do not copy only `SKILL.md`.
+
+#### 3. Restart And Verify
+
+After configuring MCP and copying the Skill, fully quit the AI editor and open it again. Then start Designer, open a project, enter the workspace, and confirm that `beken_lvgl_ui_designer` is connected in the AI editor's MCP page.
 
 ---
 
@@ -106,12 +226,12 @@ Some advanced features (complex event chains, fine-grained timeline animation tu
 | Issue | What to do |
 | --- | --- |
 | **AI Design button is disabled** | C or MicroPython preview / compile / run is active. Stop it and try again. |
-| **Dropdown shows "Not installed"** | Cursor or TRAE is not installed. Install the AI tool first. |
+| **Dropdown shows "Not installed"** | Cursor, Codex, TRAE, or TRAE CN is not installed. Install the AI tool first. |
 | **Cannot modify UI / no project open** | Open a project and enter the workspace in Designer, then launch from **AI Design**. |
 | **Not in workspace** | Enter the project workspace from the home page; do not stay on the project list. |
 | **Workspace mismatch** | The AI chat folder is not this project's `.ai-workspace`. Quit the AI tool and reopen the **current project** from Designer **AI Design**. Do not switch folders or open another project manually. |
 | **MCP commands fail in the terminal** | MCP runs inside the AI tool, **not** in the shell. Reload by launching again from **AI Design**. |
-| **Still broken after MCP install or update** | Fully quit Cursor or TRAE and reopen from **AI Design**, or uninstall and reinstall MCP under **Settings → AI Settings**. |
+| **Still broken after MCP install or update** | Fully quit Cursor, Codex, TRAE, or TRAE CN and reopen from **AI Design**, or uninstall and reinstall MCP under **Settings → AI Settings**. |
 | **AI result is not what you wanted** | Click **Rollback** and retry with a more specific prompt (page name, layout, component types, colors). Prefer small steps. |
 | **Bridge status is abnormal** | Click **Refresh** under **Settings → AI Settings** and ensure Bridge is running. |
 

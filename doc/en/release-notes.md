@@ -279,7 +279,6 @@ This document records all version updates for BEKEN LVGL UI Designer.
 
 - Fixed occasional style display disorder in the properties panel
 - Fixed data consistency issue where style groups manually disabled by users were automatically re-enabled during custom component migration/completion
-<<<<<<< HEAD
 - Fixed missing resource dependency copy issue when saving custom components
 
 ### 2.0.1
@@ -287,6 +286,47 @@ This document records all version updates for BEKEN LVGL UI Designer.
 #### Features
 
 - 🚀Added support for generating and modifying UI in the project through conversational interaction in AI editors (Cursor, TRAE)
-=======
-- Fixed missing resource dependency copy issue when saving custom components
->>>>>>> cede94f4b0be849c5769364f117128f17bfeaa40
+
+
+### 2.0.2
+
+#### Features
+
+- Added TRAE CN and Codex support for AI Design
+- Added support for events, animations, and multi-language features in AI Design
+- Added project export settings, allowing customization of the beken_generated directory export path
+- Added rotation property for components
+- Added font antialiasing precision setting in export settings (only supported for C compilation output)
+
+#### Optimizations
+
+- Optimized the smoothness of AI Design
+- Optimized link colors in documentation and corrected some documentation descriptions
+- Increased the maximum width of the component tree panel to make component names easier to view
+- Added padding style group to Textarea component styles
+
+#### Bug Fixes
+
+- Fixed issue where MCP could not be called correctly when using TRAE for AI Design
+- Fixed issue where child component positions in Flex layout did not match the selection box
+
+
+### 2.0.3
+
+#### Features
+
+- Added project archiving, archive history viewing, and archive restoration features
+- Images can now be configured to use external storage (SD card)
+- Default font can now be configured when creating new components
+
+#### Optimizations
+
+- Increased the maximum length of page/component names to 50 characters
+- Background images and other image properties now support image format settings
+
+#### Bug Fixes
+
+- Fixed issue where exported code did not apply the maximum input length setting for text areas
+- Fixed issue where exported code still showed 300 when page transition animation duration was set to 0
+- Fixed issue where exported code used an incorrect name after renaming a Tabview component
+- Fixed issue where the theme color list could not be scrolled

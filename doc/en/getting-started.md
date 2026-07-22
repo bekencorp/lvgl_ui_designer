@@ -56,21 +56,10 @@ After creating the project, you will enter the workspace interface, which consis
    - Set **Size** to 24
    - Set **Color** to blue
 
-### Add a Button
-
-1. Drag **"Button"** from the **Component Library** to the canvas
-2. Place the button below the label
-4. Set the button text to `Click Me`
-5. Adjust button style:
-   - In the **Style** panel, set the background color
-   - Set Border Radius to 10px
-
-### Adjust Layout
-
-1. Select components in the **Canvas**
-2. Drag with mouse to adjust position
-3. Drag edge control points to adjust size
-4. Or enter precise values in the **Properties Panel**
+5. Adjust position and size:
+   - Select the label in the **Canvas** and drag to adjust position
+   - Drag edge control points to adjust size
+   - Or enter precise values in the **Properties Panel**
 
 ![UI Designer Interface](/doc/images/hello_lvgl.png)
 

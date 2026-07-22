@@ -84,11 +84,19 @@ The resource manager is used to manage all resource files used in the project.
 
 ![UI Designer Interface](/doc/images/preview.png)
 
-### 5.6 AI Design
+### 5.6 Archives and History Entry
 
-The toolbar provides an **AI Design** entry to launch Cursor or TRAE and describe UI changes in natural language.
+The toolbar provides an **Archives and History** button for saving the current version, viewing archived versions, and restoring a selected version.
 
-- Install Cursor or TRAE on your computer first
+<img src="/doc/images/archive_history_toolbar.png" alt="Archives and History Entry" style="max-width: 520px; width: 80%; height: auto; display: block; margin: 16px auto;" />
+
+See **[Archives and History](workspace-archive-history.md)** for full instructions.
+
+### 5.7 AI Design
+
+The toolbar provides an **AI Design** entry to launch Cursor, Codex, TRAE, or TRAE CN and describe UI changes in natural language.
+
+- Install Cursor, Codex, TRAE, or TRAE CN on your computer first
 - MCP and Skill are installed automatically on first use
 - After AI edits the canvas, use **Save** or **Rollback** at the bottom of the canvas
 
@@ -96,4 +104,4 @@ See **[AI Design](workspace-ai-design.md)** for full instructions and troublesho
 
 ---
 
-**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Events](workspace-events.md) | [AI Design](workspace-ai-design.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)
+**Workspace Docs**: [← Back to Workspace](workspace.md) | [Canvas](workspace-canvas.md) | [Components](workspace-components.md) | [Tree](workspace-tree.md) | [Properties](workspace-properties.md) | [Events](workspace-events.md) | [Archives and History](workspace-archive-history.md) | [AI Design](workspace-ai-design.md) | [Toolbar](workspace-toolbar.md) | [Shortcuts](workspace-shortcuts.md)

@@ -84,7 +84,18 @@
 
 ![UI Designer 界面](/doc/images/preview.png)
 
-### 5.6 AI 设计
+### 5.6 存档与历史入口
+
+工具栏提供 **"存档"** 和 **"历史（数量）"** 两个按钮。
+
+- **存档**：点击后直接保存一个历史版本。
+- **历史（数量）**：打开历史弹窗，查看、预览、恢复或删除历史版本。
+
+<img src="/doc/images/archive_history_toolbar_split.png" alt="存档与历史入口" style="max-width: 620px; width: 90%; height: auto; display: block; margin: 16px auto;" />
+
+详细说明请参阅 **[存档与历史](workspace-archive-history.md)** 文档。
+
+### 5.7 AI 设计
 
 工具栏提供 **「AI设计」** 入口，可启动 Cursor 或 TRAE，通过自然语言辅助完成界面设计。
 
@@ -97,4 +108,4 @@
 ---
 
 
-**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [AI设计](workspace-ai-design.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)
+**工作台文档**：[← 返回工作台](workspace.md) | [画布](workspace-canvas.md) | [组件库](workspace-components.md) | [组件树](workspace-tree.md) | [属性面板](workspace-properties.md) | [事件系统](workspace-events.md) | [存档与历史](workspace-archive-history.md) | [AI设计](workspace-ai-design.md) | [工具栏](workspace-toolbar.md) | [快捷键](workspace-shortcuts.md)

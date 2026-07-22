@@ -18,8 +18,9 @@
 6. **[多语言功能](workspace-i18n.md)** - 多语言配置和使用
 7. **[时间轴动画](workspace-animation.md)** - 动画轨道与关键帧配置
 8. **[自定义字符](workspace-custom_character.md)** - 自定义字符配置和管理
-9. **[工具栏](workspace-toolbar.md)** - 项目管理和常用功能
-10. **[AI设计](workspace-ai-design.md)** - 使用 AI 工具辅助界面设计
+9. **[工具栏](workspace-toolbar.md)** - 项目管理、资源管理、预览及常用功能
+10. **[存档与历史](workspace-archive-history.md)** - 保存当前版本、查看历史存档和恢复版本
+11. **[AI设计](workspace-ai-design.md)** - 使用 AI 工具辅助界面设计
 
 ### 快捷键
 
@@ -84,8 +85,13 @@
   - 资源管理器
   - 预览及代码生成
 
+- **[📦 存档与历史](workspace-archive-history.md)**
+  - 保存当前项目版本
+  - 查看历史存档并切换页面预览
+  - 恢复到指定历史版本
+
 - **[🤖 AI设计](workspace-ai-design.md)**
-  - 从工具栏启动 Cursor / TRAE
+  - 从工具栏启动 Cursor / Codex / TRAE / TRAE CN
   - MCP 与 Skill 环境安装
   - 自然语言描述界面需求
   - 修改确认与常见问题

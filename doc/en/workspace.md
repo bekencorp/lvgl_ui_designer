@@ -18,8 +18,9 @@ The workspace is divided into 5 main functional areas:
 6. **[Multi-language Feature](workspace-i18n.md)** - Multi-language configuration and usage
 7. **[Timeline Animation](workspace-animation.md)** - Animation tracks and keyframes
 8. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
-9. **[Toolbar](workspace-toolbar.md)** - Project management and common functions
-10. **[AI Design](workspace-ai-design.md)** - Design UI with AI tools
+9. **[Toolbar](workspace-toolbar.md)** - Project management, resource management, preview, and common functions
+10. **[Archives and History](workspace-archive-history.md)** - Save the current version, inspect archives, and restore versions
+11. **[AI Design](workspace-ai-design.md)** - Design UI with AI tools
 
 ### Keyboard Shortcuts
 
@@ -84,8 +85,13 @@ Click the links below to view detailed instructions for each module:
   - Resource manager
   - Preview and code generation
 
+- **[📦 Archives and History](workspace-archive-history.md)**
+  - Save the current project version
+  - Inspect archived versions and switch pages in preview
+  - Restore to a selected archived version
+
 - **[🤖 AI Design](workspace-ai-design.md)**
-  - Launch Cursor / TRAE from the toolbar
+  - Launch Cursor / Codex / TRAE / TRAE CN from the toolbar
   - MCP and Skill environment setup
   - Describe UI requirements in natural language
   - Confirm changes and troubleshooting
