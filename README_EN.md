@@ -20,7 +20,9 @@ BEKEN LVGL UI Designer is a visual design tool for embedded device UI developmen
 ### 🤖 AI Design
 - **AI Editor-Assisted Design** - Work with AI editors and tools such as Cursor and TRAE to design UI interactions through natural-language prompts
 
-<video src="https://github.com/bekencorp/lvgl_ui_designer/releases/download/v2.0.3/lvgl_ai_design.mp4" controls width="700"></video>
+<a href="https://github.com/bekencorp/lvgl_ui_designer/releases/download/v2.0.3/lvgl_ai_design.mp4"><img src="doc/images/ai-design.jpg" alt="AI Design Demo Video - Click to Play" width="700"></a>
+
+> 🎬 Click the image to watch the AI design feature demo video
 
 ### 🧩 Rich Component Library
 - **30+ LVGL Components** - Covering common UI controls and advanced components
