@@ -22,6 +22,8 @@ BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设�
 
 - **AI 编辑器协同设计** - 可结合 Cursor、TRAE 等 AI 编辑器和工具，通过自然语言描述进行 UI 交互设计
 
+<video src="https://github.com/bekencorp/lvgl_ui_designer/releases/download/v2.0.3/lvgl_ai_design.mp4" controls width="700"></video>
+
 ### 🧩 丰富的组件库
 
 - **30+ 种 LVGL 组件** - 涵盖常用 UI 控件和高级组件
@@ -77,9 +79,9 @@ BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设�
 
 ### 🛴 两轮车-示例2
 
-<a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="两轮车仪表盘界面示例" width="400"></a>
+<a href="examples/dashcam_1024_600/"><img src="examples/dashcam_1024_600/ScreenShot_1.png" alt="行车记录仪界面示例" width="400"></a>
 
-两轮车多页面示例，展示了速度显示、电量指示、模式切换、设置界面等典型的仪表盘 UI 设计。
+行车记录仪示例，展示了行车记录、导航、OTA 升级等多页面嵌入式设备 UI 设计。
 
 ### ⏱️ 时间轴动画
 

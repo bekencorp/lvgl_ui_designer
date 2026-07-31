@@ -20,6 +20,8 @@ BEKEN LVGL UI Designer is a visual design tool for embedded device UI developmen
 ### 🤖 AI Design
 - **AI Editor-Assisted Design** - Work with AI editors and tools such as Cursor and TRAE to design UI interactions through natural-language prompts
 
+<video src="https://github.com/bekencorp/lvgl_ui_designer/releases/download/v2.0.3/lvgl_ai_design.mp4" controls width="700"></video>
+
 ### 🧩 Rich Component Library
 - **30+ LVGL Components** - Covering common UI controls and advanced components
 - **Common Controls** - Basic controls such as buttons, input fields, sliders, lists, etc.
@@ -71,11 +73,11 @@ A coffee machine control interface example that demonstrates the use of complex 
 
 A single-page two-wheeler example containing common embedded device UI elements such as status indicators, navigation information, and device connection status.
 
-### 🛴 Two-Wheeler - Example 2
+### 📹 Dashcam
 
-<a href="examples/ScooterDashboard/"><img src="examples/ScooterDashboard/ScreenShot_1.png" alt="Two-Wheeler" width="400"></a>
+<a href="examples/dashcam_1024_600/"><img src="examples/dashcam_1024_600/ScreenShot_1.png" alt="Dashcam Interface Example" width="400"></a>
 
-A multi-page two-wheeler example showcasing typical dashboard UI design such as speed display, battery indicator, mode switching, and settings interface.
+A dashcam example showcasing multi-page embedded device UI design including video recording, navigation, and OTA updates.
 
 ### ⏱️ Timeline Animation
 
