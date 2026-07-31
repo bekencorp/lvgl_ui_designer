@@ -22,6 +22,10 @@ BEKEN LVGL UI Designer 是一个面向嵌入式设备 UI 开发的可视化设�
 
 - **AI 编辑器协同设计** - 可结合 Cursor、TRAE 等 AI 编辑器和工具，通过自然语言描述进行 UI 交互设计
 
+
+https://github.com/user-attachments/assets/cf8dece6-2705-4153-b679-37d9c010f4e6
+
+
 ### 🧩 丰富的组件库
 
 - **30+ 种 LVGL 组件** - 涵盖常用 UI 控件和高级组件
