@@ -18,9 +18,10 @@
 6. **[多语言功能](workspace-i18n.md)** - 多语言配置和使用
 7. **[时间轴动画](workspace-animation.md)** - 动画轨道与关键帧配置
 8. **[自定义字符](workspace-custom_character.md)** - 自定义字符配置和管理
-9. **[工具栏](workspace-toolbar.md)** - 项目管理、资源管理、预览及常用功能
-10. **[存档与历史](workspace-archive-history.md)** - 保存当前版本、查看历史存档和恢复版本
-11. **[AI设计](workspace-ai-design.md)** - 使用 AI 工具辅助界面设计
+9. **[自定义代码](workspace-custom-code.md)** - 设计器内自定义代码与外部 IDE 扩展
+10. **[工具栏](workspace-toolbar.md)** - 项目管理、资源管理、预览及常用功能
+11. **[存档与历史](workspace-archive-history.md)** - 保存当前版本、查看历史存档和恢复版本
+12. **[AI设计](workspace-ai-design.md)** - 使用 AI 工具辅助界面设计
 
 ### 快捷键
 
@@ -77,6 +78,11 @@
   - 配置字符和字符范围
   - FontAwesome 图标支持
   - 同步功能自动生成配置
+
+- **[🔧 自定义代码](workspace-custom-code.md)**
+  - 设计器内：页面、事件、调用函数
+  - 外部 IDE：`BEKEN_USER_CODE` 区域
+  - 代码编辑器可编辑范围
 
 - **[🛠️ 工具栏](workspace-toolbar.md)**
   - 项目信息和保存状态

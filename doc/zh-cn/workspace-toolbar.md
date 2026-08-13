@@ -80,7 +80,12 @@
 #### 代码预览
 
 **查看生成的代码**：
-1. 点击工具栏 **"C语言"** 或 **"MicroPtyon"** 按钮进行预览
+1. 点击工具栏 **「C语言」** 或 **「MicroPython」** 按钮进行预览
+2. 使用 **代码编辑器** 查看 `beken_generated` 目录下的生成文件
+   - 生成文件（如 `page_*_init.c`）为**只读**
+   - 仅 `custom/` 目录与 `custom_func.c/h` 可在设计器内编辑
+
+自定义代码的两种写法及重新生成保留规则，请参阅 **[自定义代码](workspace-custom-code.md)**。
 
 ![UI Designer 界面](/doc/images/preview.png)
 

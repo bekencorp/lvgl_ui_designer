@@ -18,9 +18,10 @@ The workspace is divided into 5 main functional areas:
 6. **[Multi-language Feature](workspace-i18n.md)** - Multi-language configuration and usage
 7. **[Timeline Animation](workspace-animation.md)** - Animation tracks and keyframes
 8. **[Custom Characters](workspace-custom_character.md)** - Custom character configuration and management
-9. **[Toolbar](workspace-toolbar.md)** - Project management, resource management, preview, and common functions
-10. **[Archives and History](workspace-archive-history.md)** - Save the current version, inspect archives, and restore versions
-11. **[AI Design](workspace-ai-design.md)** - Design UI with AI tools
+9. **[Custom Code](workspace-custom-code.md)** - In-designer custom code and external IDE regions
+10. **[Toolbar](workspace-toolbar.md)** - Project management, resource management, preview, and common functions
+11. **[Archives and History](workspace-archive-history.md)** - Save the current version, inspect archives, and restore versions
+12. **[AI Design](workspace-ai-design.md)** - Design UI with AI tools
 
 ### Keyboard Shortcuts
 
@@ -77,6 +78,11 @@ Click the links below to view detailed instructions for each module:
   - Configure characters and character ranges
   - FontAwesome icon support
   - Sync function to auto-generate configuration
+
+- **[🔧 Custom Code](workspace-custom-code.md)**
+  - In-designer: page, event, call function
+  - External IDE: `BEKEN_USER_CODE` regions
+  - Code Editor editable scope
 
 - **[🛠️ Toolbar](workspace-toolbar.md)**
   - Project information and save status

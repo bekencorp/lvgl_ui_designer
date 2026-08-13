@@ -330,3 +330,27 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where exported code still showed 300 when page transition animation duration was set to 0
 - Fixed issue where exported code used an incorrect name after renaming a Tabview component
 - Fixed issue where the theme color list could not be scrolled
+
+
+### 2.0.4
+
+#### Features
+
+- Added custom code regions for exported files; content within these regions will not be overwritten during export
+- Added custom component search
+
+
+#### Optimizations
+
+- Optimized naming rules after adding custom components to the canvas
+- Increased the maximum component nesting level to 20
+- Added an error prompt when page data issues cause rendering to fail, with support for repairing the data
+- Optimized the effects of some AI design components
+
+
+#### Bug Fixes
+
+- Fixed issue where the corresponding component in the component tree was not selected when selecting a component on the canvas
+- Fixed issue where the container border disappeared when dragging a child component into a container
+- Fixed issue where button font property alignment did not take effect
+- Fixed issue where the startup page setting did not take effect in Micropython preview
