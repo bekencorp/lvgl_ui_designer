@@ -354,3 +354,16 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed issue where the container border disappeared when dragging a child component into a container
 - Fixed issue where button font property alignment did not take effect
 - Fixed issue where the startup page setting did not take effect in Micropython preview
+
+
+### 2.0.5
+
+#### Features
+
+- Support exporting pages as PNG images
+- Animimg component images now support external storage
+
+#### Bug Fixes
+
+- Fixed issue where custom code events caused duplicate exported code
+- Fixed issue where external storage image paths had duplicate suffixes
