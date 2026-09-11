@@ -52,6 +52,13 @@ Choose the condition that triggers the event. Common event types include:
 **Scroll Events**
 - **LV_EVENT_SCROLL**: Triggered when the component is scrolled
 
+**Draw Events (fired during refresh, not on click)**
+- **LV_EVENT_DRAW_MAIN**: Fired while drawing the widget body
+- **LV_EVENT_DRAW_POST**: Fired after children are drawn; use for overlays
+- **LV_EVENT_DRAW_TASK_ADDED**: Fired when a draw task is created (`SEND_DRAW_TASK_EVENTS` is enabled automatically)
+
+Draw events only support **Custom Code** or **Call Function**. Do not change widget attributes/styles or create/delete widgets in the callback. The designer canvas does not simulate these events; verify in the simulator.
+
 ### Step 3: Select Action Type
 
 Choose the action to execute when the event is triggered:

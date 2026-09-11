@@ -367,3 +367,24 @@ This document records all version updates for BEKEN LVGL UI Designer.
 
 - Fixed issue where custom code events caused duplicate exported code
 - Fixed issue where external storage image paths had duplicate suffixes
+
+### 2.0.6
+
+#### Features
+
+- Font export now supports dynamic TTF. Choose bitmap fonts or dynamic TTF (tiny_ttf) in Project Settings -> Font Generation. Exported fonts can be embedded in firmware or stored on an SD card or Flash.
+- Image external storage now supports Flash storage
+- Event system now supports draw events: `LV_EVENT_DRAW_MAIN`, `LV_EVENT_DRAW_POST`, `LV_EVENT_DRAW_TASK_ADDED` (fired during the refresh pipeline, not on click)
+
+#### Optimizations
+
+- Timeline animation keyframes now support dragging to adjust their time points
+- Exported C code is compatible with LVGL 9.3 and 9.5
+
+#### Bug Fixes
+
+- Fixed color mismatch between keyframe color animation preview and the simulator
+- Fixed page load events not working in the MicroPython simulator
+- Fixed incorrect 1px rounded border display when a container has child widgets in the canvas and MicroPython preview
+- Fixed nested child selection boxes being misaligned with the actual position and undraggable under Flex layout
+- Fixed custom font text position mismatch between preview and the C simulator
