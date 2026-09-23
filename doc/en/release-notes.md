@@ -388,3 +388,12 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed incorrect 1px rounded border display when a container has child widgets in the canvas and MicroPython preview
 - Fixed nested child selection boxes being misaligned with the actual position and undraggable under Flex layout
 - Fixed custom font text position mismatch between preview and the C simulator
+
+### 2.0.7
+
+#### Features
+
+- Support exporting unreferenced project images as embedded, SD-card, or Flash resources in PNG/BIN format
+- Support renaming projects
+- Support duplicating projects
+- Support removing projects from home page cards
