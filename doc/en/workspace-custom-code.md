@@ -1,6 +1,6 @@
 # 🔧 Custom Code
 
-Besides designing the UI visually, you may need to add your own C or MicroPython logic. The tool offers **two approaches**—pick the one that fits your workflow, and **do not duplicate the same logic in both places**.
+Besides designing the UI visually, you may need to add your own C logic. The tool offers **two approaches**—pick the one that fits your workflow, and **do not duplicate the same logic in both places**.
 
 ---
 
@@ -11,7 +11,7 @@ Besides designing the UI visually, you may need to add your own C or MicroPython
 | **Where to edit** | Properties panel, event editor | Keil, VS Code, etc., open the `beken_generated` folder |
 | **Stored in** | Project file (saved with the project) | `.c` / `.h` files on disk |
 | **After regenerate** | Re-injected from the project | Only code **inside** `BEKEN_USER_CODE` markers is kept |
-| **Best for** | Quick experiments, MicroPython projects | C firmware, SDK integration, complex logic |
+| **Best for** | Quick experiments | C firmware, SDK integration, complex logic |
 
 **In-designer** has three entry points (all saved in the project):
 
@@ -41,9 +41,7 @@ Use when the page needs extra setup on load.
 2. Properties panel → **Custom Code** → **Add / Edit**
 3. Fill in **#include and variables** (inside `BEKEN_USER_CODE includes` in `page_*_init.c`) and **Implementation** (inside `BEKEN_USER_CODE implementation` in `init_page_xxx()`)
 
-> **Tip**: For C, page custom code shares the same `BEKEN_USER_CODE` markers with external IDE additions; designer content is refreshed on regenerate, hand-written content after it is preserved.
-
-> **Tip**: Supports both **C** and **MicroPython** tabs.
+> **Tip**: Page custom code shares the same `BEKEN_USER_CODE` markers with external IDE additions; designer content is refreshed on regenerate, hand-written content after it is preserved.
 
 ### Event custom code
 

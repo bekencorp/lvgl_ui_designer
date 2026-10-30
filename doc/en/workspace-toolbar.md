@@ -80,7 +80,7 @@ The resource manager is used to manage all resource files used in the project.
 #### Code Preview
 
 **View Generated Code**:
-1. Click **"C Language"** or **"MicroPtyon"**  button in toolbar
+1. Click the **"Simulator"** button to preview in-app, or click the **"C Language"** dropdown button to compile and run in the external simulator window
 
 ![UI Designer Interface](/doc/images/preview.png)
 

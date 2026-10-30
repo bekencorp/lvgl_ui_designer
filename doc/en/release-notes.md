@@ -397,3 +397,24 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Support renaming projects
 - Support duplicating projects
 - Support removing projects from home page cards
+
+### 3.0.1
+
+#### Features
+
+- Simulator upgraded from MicroPython to JS + WASM rendering, providing better consistency and performance
+- Added **multi-LVGL-version support**: 8.4.0 / 9.2.2 / 9.3.0 / 9.4.0 / 9.5.0 / 9.6.0
+- AI Design now supports Qoder
+- Timeline animation now supports Rotation keyframes
+
+#### Optimizations
+
+- Improved responsiveness when opening projects, dragging/selecting on the canvas, and using the property panel
+- Improved canvas performance for high-resolution projects and projects with a large number of widgets
+- Improved canvas interaction experience
+
+#### Bug Fixes
+
+- Fixed some component style and property fields not taking effect
+- Fixed the failure to compile the PC simulator when dynamic TTF fonts are stored on an SD card or Flash and only "C Compile" is clicked
+- Button default text alignment changed to center, and a Padding style group is exposed

@@ -26,9 +26,9 @@ After the archive is created, the button in the Current Version card changes to 
 
 <img src="/doc/images/archive_history_dialog.png" alt="Archives and History Dialog" style="max-width: 680px; width: 90%; height: auto; display: block; margin: 16px auto;" />
 
-## Run MicroPython Preview
+## Preview in the Simulator
 
-In the history dialog, click the **MicroPython** button in the upper-right corner of the preview area to generate and run MicroPython based on the currently displayed version.
+After selecting a version, click the **"Run in Simulator"** button above the preview area to preview that version in the built-in JS simulator.
 
 ## Restore an Archived Version
 

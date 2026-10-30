@@ -225,7 +225,7 @@ Some advanced features (complex event chains, fine-grained timeline animation tu
 
 | Issue | What to do |
 | --- | --- |
-| **AI Design button is disabled** | C or MicroPython preview / compile / run is active. Stop it and try again. |
+| **AI Design button is disabled** | A C language compile/run or the JS simulator is active. Stop it and try again. |
 | **Dropdown shows "Not installed"** | Cursor, Codex, TRAE, or TRAE CN is not installed. Install the AI tool first. |
 | **Cannot modify UI / no project open** | Open a project and enter the workspace in Designer, then launch from **AI Design**. |
 | **Not in workspace** | Enter the project workspace from the home page; do not stay on the project list. |

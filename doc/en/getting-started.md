@@ -26,6 +26,7 @@ When you first launch BEKEN LVGL UI Designer, you will see the home page with th
 3. Configure project information:
    - **Project Name**: Name your project (only numbers, letters, and underscores allowed)
    - **Save Location**: Choose the folder to save the project
+   - **LVGL Version**: Choose the target LVGL version (8.4.0 and 9.3.0 are recommended; 9.2.2 / 9.4.0 / 9.5.0 / 9.6.0 are experimental)
    - **Screen Size**: Set the screen resolution of the target device (e.g., 480x272)
 
 ![UI Designer Interface](/doc/images/create_step_2.png)
@@ -72,9 +73,12 @@ After creating the project, you will enter the workspace interface, which consis
 
 ### Preview Interface
 
-1. Select preview method:
-   - **C Language** - For standard LVGL projects, click **Generate + Compile + Run** in the menu
-   - **MicroPython** - For MicroPython environments, click **Generate + Run** in the menu
+1. Click the **"Simulator"** button in the toolbar to open the built-in JS simulator and preview immediately with the project's LVGL version—no external toolchain required
+2. Or click the **"C Language"** dropdown button and choose an operation:
+   - **Generate+Compile+Run** - Compile and run in the external simulator window (for standard LVGL projects)
+   - **Generate / Compile / Run** - Run each step separately
+   - **Full Clean** - Clean up generated artifacts
+3. The bottom **Log** panel opens automatically during execution, showing generation, compilation, and run output
 4. Code is generated in the project directory
 
 ![UI Designer Interface](/doc/images/simulator.png)
