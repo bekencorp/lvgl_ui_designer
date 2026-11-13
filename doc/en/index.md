@@ -1,6 +1,6 @@
-# LVGL UI Designer Documentation
+# Beken LVGL UI Designer Documentation
 
-Welcome to **BEKEN LVGL UI Designer**! This is a professional visual design tool for LVGL graphical interfaces, helping you quickly design and develop user interfaces for embedded devices.
+Welcome to **BEKEN Beken LVGL UI Designer**! This is a professional visual design tool for LVGL graphical interfaces, helping you quickly design and develop user interfaces for embedded devices.
 
 ![UI Designer Interface](/doc/images/workspace_design.png)
 
@@ -35,6 +35,7 @@ Welcome to **BEKEN LVGL UI Designer**! This is a professional visual design tool
 - **[Download](download.md)** - Download installer and installation instructions
 - **[Getting Started](getting-started.md)** - 5-minute quick start guide
 - **[Workspace](workspace.md)** - Detailed workspace features introduction
+- **[Toolbox and Plugins](toolbox.md)** - Use built-in tools and build your own with AI
 - **[Upcoming Features](roadmap.md)** - Roadmap and upcoming features
 - **[Release Notes](release-notes.md)** - View version update history
 - **[FAQ](faq.md)** - Frequently asked questions

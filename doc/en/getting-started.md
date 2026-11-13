@@ -1,13 +1,13 @@
 # Getting Started
 
-This guide will help you quickly get started with BEKEN LVGL UI Designer and create your first UI project in 5 minutes.
+This guide will help you quickly get started with BEKEN Beken LVGL UI Designer and create your first UI project in 5 minutes.
 
 
 ## 🎯 Create Your First Project
 
 ### Step 1: Launch the Application
 
-When you first launch BEKEN LVGL UI Designer, you will see the home page with the following options:
+When you first launch BEKEN Beken LVGL UI Designer, you will see the home page with the following options:
 - **New Project** - Create a new UI project
 - **Import Project** - Import an existing project
 - **Recent Projects** - Quick access to recently used projects

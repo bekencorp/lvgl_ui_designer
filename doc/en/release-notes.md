@@ -1,6 +1,6 @@
 # Release Notes
 
-This document records all version updates for BEKEN LVGL UI Designer.
+This document records all version updates for BEKEN Beken LVGL UI Designer.
 
 ---
 
@@ -237,7 +237,7 @@ This document records all version updates for BEKEN LVGL UI Designer.
 
 #### Optimizations
 
-- Added a single-instance lock at startup to prevent multiple LVGL UI Designer instances from being opened simultaneously
+- Added a single-instance lock at startup to prevent multiple Beken LVGL UI Designer instances from being opened simultaneously
 - Added an antivirus whitelist guide in the workspace terminal: when the tool is detected as being blocked by antivirus software, a one-click guide is provided to help resolve it
 
 #### Bug Fixes
@@ -418,3 +418,35 @@ This document records all version updates for BEKEN LVGL UI Designer.
 - Fixed some component style and property fields not taking effect
 - Fixed the failure to compile the PC simulator when dynamic TTF fonts are stored on an SD card or Flash and only "C Compile" is clicked
 - Button default text alignment changed to center, and a Padding style group is exposed
+
+### 3.0.2
+
+#### Features
+
+- Added byte alignment, RLE compression, and LVGL 8.4.0 color depth settings for image encoding
+- Added a toolbox and plugin system with install, import/export, and one-click launch, including 7 built-in official plugins:
+  - Component Style Gallery: multiple styles for 32 component types, addable to the canvas in one click
+  - Animation Effects Library: entrance, exit, emphasis, and loop animation presets written to the project timeline
+  - Resource Budget Analyzer: estimates Flash / RAM usage, lists top consumers, and suggests optimizations
+  - Event and Page Navigation Map: summarizes page navigation, component events, and animation triggers, and flags dead links and orphan events
+  - LVGL Image Converter: converts images to LVGL C source or BIN with configurable version, color format, and byte order
+  - Font Converter: converts TTF / OTF into LVGL bitmap fonts, subset by the characters actually used to reduce Flash usage
+  - Image Format Converter: batch converts PNG / JPG / WebP / BMP with quality control and scale/crop support
+- AI extension toolbox (quickly build personalized LVGL tools on top of the built-in capabilities)
+
+#### Optimizations
+
+- AI Design now supports custom code: page-level and project-level C code can be read and written
+- Improved project settings
+- Reduced the package size by removing redundant content
+- Adjusted the copyright header of generated C code: generated code can be freely used, modified and commercially distributed
+- Keyboard operation is now supported in the LVGL 8.4.0 simulator
+
+#### Bug Fixes
+
+- Fixed the mismatch between generated output and actual settings in some image-related component scenarios
+- Fixed child component layout offsets after copying a page, and duplicate page names on repeated copies
+- Fixed TabView tab switching not working on the canvas
+- Fixed duplicated window header titles after switching language on Windows, and headers disappearing while dragging the canvas
+- Fixed invalid drop targets in the component tree that reported success without moving the component
+- Fixed abnormal style migration for existing projects, and Textarea height being overridden in one-line mode with clipped text

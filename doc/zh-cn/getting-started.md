@@ -1,13 +1,13 @@
 # 快速开始
 
-本指南将帮助您快速上手BEKEN LVGL UI Designer，在 5 分钟内创建您的第一个 UI 项目。
+本指南将帮助您快速上手BEKEN Beken LVGL UI Designer，在 5 分钟内创建您的第一个 UI 项目。
 
 
 ## 🎯 创建第一个项目
 
 ### 步骤 1：启动应用
 
-首次启动BEKEN LVGL UI Designer 后，您会看到首页界面，包含以下选项：
+首次启动BEKEN Beken LVGL UI Designer 后，您会看到首页界面，包含以下选项：
 - **新建项目** - 创建新的 UI 项目
 - **导入项目** - 导入现有项目
 - **最近项目** - 快速打开最近使用的项目

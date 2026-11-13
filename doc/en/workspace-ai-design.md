@@ -216,6 +216,9 @@ Through MCP, the AI can typically:
 - Create, delete, and move components
 - Update component properties and styles
 - Create or switch pages
+- Write custom C code for page-level initialization or component/page `custom_code` events
+
+Custom code runs only in **C language → Generate + Compile + Run**. The canvas and JS simulator do not execute C. The AI provides the code and asks you to verify it in the C runtime; it cannot verify custom-code behavior from a canvas screenshot.
 
 Some advanced features (complex event chains, fine-grained timeline animation tuning, etc.) may not be supported yet. The AI should explain limits; you can finish those parts manually.
 

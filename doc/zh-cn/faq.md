@@ -1,6 +1,6 @@
 # 常见问题解答 (FAQ)
 
-本文档收集了用户在使用BEKEN  LVGL UI Designer 过程中遇到的常见问题及解决方案。
+本文档收集了用户在使用BEKEN  Beken LVGL UI Designer 过程中遇到的常见问题及解决方案。
 
 ---
 

@@ -1,6 +1,6 @@
-#BEKEN LVGL UI Designer 使用文档
+#BEKEN Beken LVGL UI Designer 使用文档
 
-欢迎使用 **BEKEN LVGL UI Designer**！这是一款专业的 LVGL 图形界面可视化设计工具，帮助您快速设计和开发嵌入式设备的用户界面。
+欢迎使用 **BEKEN Beken LVGL UI Designer**！这是一款专业的 LVGL 图形界面可视化设计工具，帮助您快速设计和开发嵌入式设备的用户界面。
 
 ![UI Designer 界面](/doc/images/workspace_design.png)
 
@@ -35,6 +35,7 @@
 - **[软件下载](download.md)** - 下载安装包和安装说明
 - **[快速开始](getting-started.md)** - 5分钟快速上手指南
 - **[工作台使用](workspace.md)** - 详细的工作台功能介绍
+- **[工具箱与插件](toolbox.md)** - 使用内置工具与用 AI 开发自己的工具
 - **[待完成功能](roadmap.md)** - 开发路线图和即将推出的功能
 - **[版本更新](release-notes.md)** - 查看版本更新日志
 - **[常见问题](faq.md)** - 常见问题解答

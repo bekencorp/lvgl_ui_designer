@@ -84,6 +84,28 @@ The resource manager is used to manage all resource files used in the project.
 
 ![UI Designer Interface](/doc/images/preview.png)
 
+#### Simulator Keyboard Input
+
+The external simulator window supports keyboard operation. Click the window once to give it focus, then use:
+
+| Key | Action |
+| --- | --- |
+| Tab / PageDown | Focus the next widget |
+| PageUp | Focus the previous widget |
+| Arrow keys | Adjust Slider / Roller / Dropdown, move the Textarea cursor |
+| Enter | Activate a button, confirm editing |
+| Esc | Leave edit mode |
+| Backspace / Delete | Delete characters |
+| Home / End | Move the cursor to the start / end |
+| Letters, digits, symbols | Type into the focused Textarea |
+
+Notes:
+
+- Only focusable widgets (Button, Checkbox, Slider, Switch, Dropdown, Roller, Table, Textarea) join the focus chain. Focus order follows widget creation order.
+- The focus ring appears only after keyboard focus changes; mouse click and drag behavior is unchanged.
+- Shift+Tab is not supported for going back; use PageUp instead.
+- Non-ASCII characters require the Textarea font to contain the matching glyphs.
+
 ### 5.6 Archives and History Entry
 
 The toolbar provides an **Archives and History** button for saving the current version, viewing archived versions, and restoring a selected version.

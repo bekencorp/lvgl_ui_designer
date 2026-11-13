@@ -97,6 +97,28 @@
 
 ![UI Designer 界面](/doc/images/preview.png)
 
+#### 模拟器键盘操作
+
+外部模拟器窗口支持用键盘操作界面。先点击一次模拟器窗口让它获得焦点，再使用以下按键：
+
+| 按键 | 作用 |
+| --- | --- |
+| Tab / PageDown | 焦点切到下一个控件 |
+| PageUp | 焦点切到上一个控件 |
+| 方向键 | Slider / Roller / Dropdown 调值，Textarea 移动光标 |
+| Enter | 触发按钮、确认编辑 |
+| Esc | 退出编辑状态 |
+| Backspace / Delete | 删除字符 |
+| Home / End | 光标移到开头 / 结尾 |
+| 字母、数字、符号 | 输入到当前聚焦的 Textarea |
+
+说明：
+
+- 只有 Button、Checkbox、Slider、Switch、Dropdown、Roller、Table、Textarea 等可聚焦控件会进入焦点链，焦点顺序与控件创建顺序一致。
+- 焦点框只在使用键盘切换焦点后出现，鼠标点击和拖动行为不受影响。
+- Shift+Tab 暂不支持反向切换，向前回退请用 PageUp。
+- 中文等非 ASCII 字符能否显示，取决于 Textarea 使用的字体是否包含对应字形。
+
 ### 5.6 存档与历史入口
 
 工具栏提供 **"存档"** 和 **"历史（数量）"** 两个按钮。

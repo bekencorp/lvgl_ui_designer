@@ -1,6 +1,6 @@
 # Workspace User Guide
 
-The workspace is the core working area of BEKEN LVGL UI Designer. This guide provides detailed information about the functions and usage of each module in the workspace.
+The workspace is the core working area of BEKEN Beken LVGL UI Designer. This guide provides detailed information about the functions and usage of each module in the workspace.
 
 ## 📐 Workspace Layout
 
